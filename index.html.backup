@@ -1,0 +1,4074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Focus on JUUN Forever | 나는 영원히 주은을 응원해요</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 页面加载动画 -->
+    <div class="loader-overlay">
+        <div class="loader-content">
+            <div class="loader-heart">💜👾</div>
+            <div class="loader-text">Loading <span class="text-angel">Angel</span>'s Love... For <span class="text-juun">JUUN</span></div>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">💜 Angel x JUUN</a>
+            
+            <!-- 桌面端导航 -->
+            <div class="nav-links">
+                <a href="#home" data-en="Home" data-ko="홈">Home</a>
+                <a href="#about" data-en="About JUUN" data-ko="주은 소개">About JUUN</a>
+                <a href="#moments" data-en="Moments" data-ko="순간">Moments</a>
+                <a href="#collection" data-en="Collection" data-ko="컬렉션">Collection</a>
+                <a href="#memories" data-en="Memories" data-ko="추억">Memories</a>
+                <a href="#angel-letters" data-en="Letters for JUUN" data-ko="JUUN에게 편지">Letters for JUUN</a>
+            </div>
+            
+            <!-- 语言切换按钮 -->
+            <div class="lang-switch">
+                <button id="lang-en" class="lang-btn active">EN</button>
+                <button id="lang-ko" class="lang-btn">한국어</button>
+            </div>
+            
+            <!-- 移动端菜单按钮 -->
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+        </div>
+        
+        <!-- 移动端导航菜单 -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#home" data-en="Home" data-ko="홈">Home</a>
+            <a href="#about" data-en="About JUUN" data-ko="주은 소개">About JUUN</a>
+            <a href="#moments" data-en="Moments" data-ko="순간">Moments</a>
+            <a href="#collection" data-en="Collection" data-ko="컬렉션">Collection</a>
+            <a href="#memories" data-en="Memories" data-ko="추억">Memories</a>
+            <a href="#angel-letters" data-en="Letters for JUUN" data-ko="JUUN에게 편지">Letters for JUUN</a>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <!-- Angel装饰元素 -->
+            <div class="angel-star" style="top: 80px; left: 15%;">✦</div>
+            <div class="angel-star" style="top: 120px; right: 20%; animation-delay: 0.5s;">✧</div>
+            <div class="angel-halo" style="top: 60px; right: 15%;">✧◉✧</div>
+            <div class="angel-star" style="bottom: 100px; left: 10%; animation-delay: 1s;">✨</div>
+            <div class="angel-star" style="bottom: 80px; right: 12%; animation-delay: 1.5s;">⭐</div>
+            
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        <span data-en="Angel's Dearest" data-ko="Angel의 소중한">To My Angel</span>
+                        <span class="text-primary">JUUN</span>
+                    </h1>
+                    <p class="subtitle" data-en="Angel Focus on JUUN Forever" data-ko="Angel은 영원히 주은을 응원해요">Angel Focus on JUUN Forever</p>
+                    <p data-en="Every glance, every smile, every heartbeat shared with you - all woven into this eternal love letter just for JUUN" 
+                       data-ko="JUUN과 나눈 모든 눈빛, 모든 미소, 모든 심장 박동 - 이 영원한 사랑 편지에 모두 담아요">
+                        Every glance, every smile, every heartbeat shared with you - all woven into this eternal love letter just for JUUN
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#memories" class="btn btn-primary" data-en="View Memories" data-ko="추억 보기">View Memories</a>
+                        <a href="#moments" class="btn btn-secondary" data-en="See Photos" data-ko="사진 보기">See Photos</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./images/juun18.jpg" alt="Kim Jueun">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于JUUN -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="About Kim Jueun" data-ko="김주은 소개">My Girl~</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./images/juun2.jpg" alt="Kim Jueun" contenteditable="false" data-editable="about_image" onclick="changeImage(this)">
+                </div>
+                <div class="about-info">
+                    <h3 data-en="JUUN's Tips" data-ko="주은의 팁">JUUN's Tips</h3>
+                    
+                    <div class="profile-info">
+                        <div><span data-en="Stage Name:" data-ko="예명:">Stage Name:</span> JUUN</div>
+                        <div><span data-en="Full Name:" data-ko="본명:">Full Name:</span> Kim Jueun (김주은)</div>
+                        <div><span data-en="Birthday:" data-ko="생일:">Birthday:</span> December 3, 2008</div>
+                        <div><span data-en="Birthplace:" data-ko="출생지:">Birthplace:</span> Icheon, Gyeonggi-do, South Korea</div>
+                        <div><span data-en="Agency:" data-ko="소속사:">Agency:</span> SM Entertainment</div>
+                        <div><span data-en="Group:" data-ko="그룹:">Group:</span> Hearts2Hearts</div>
+                        <div><span data-en="Debut:" data-ko="데뷔:">Debut:</span> February 24, 2025</div>
+                        <div><span data-en="Position:" data-ko="포지션:">Position:</span> Main Dancer</div>
+                        <div><span data-en="Favorite Color:" data-ko="좋아하는 색:">Favorite Color:</span> Violet Purple</div>
+                        <div><span data-en="Favorite Character:" data-ko="좋아하는 캐릭터:">Favorite Character:</span> Kuromi</div>
+                        <div><span data-en="Representative Doll:" data-ko="대표 인형:">Representative Doll:</span> JJUUILIEN</div>
+                    </div>
+                    
+                    <h3 data-en="Why Angel Loves Her" data-ko="Angel이 그녀를 사랑하는 이유">Loves For Her</h3>
+                    <div class="about-text">
+                        <p data-en="The first time I saw her dance, I was completely mesmerized. Her movements are so precise yet full of emotion, like she's telling a story with her body."
+                           data-ko="그녀가 춤추는 모습을 처음 봤을 때 완전히 매료되었어요. 그녀의 움직임은 정확하면서도 감정이 가득해서, 마치 몸으로 이야기를 전하는 것 같았어요.">
+                            The first time I saw her dance, I was completely mesmerized. Her movements are so precise yet full of emotion, like she's telling a story with her body.
+                        </p>
+                        <p data-en="But what touches me most is her personality. She's so genuine and kind, always taking time to reply to fans. Her cute face never fails to make me laugh, even on my hardest days."
+                           data-ko="하지만 가장 저를 감동시키는 것은 그녀의 성격이에요. 정말 진실되고 친절하며, 항상 팬들에게 답장해주려 노력해요. 힘든 날에도 그녀의 귀여운 얼굴은 저를 웃게 만들어요.">
+                            But what touches me most is her personality. She's so genuine and kind, always taking time to reply to fans. Her cute face never fails to make me laugh, even on my hardest days.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 我的瞬间 -->
+    <section id="moments" class="moments">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="JUUN's Special Moments" data-ko="주은의 특별한 순간">JUUN's Special Moments</h2>
+                <div class="divider"></div>
+                <p data-en="The moments that made me fall in love with her" 
+                   data-ko="그녀와 사랑에 빠지게 만든 순간들">
+                    The moments that made me fall in love with her
+                </p>
+            </div>
+            
+            <div class="moments-grid">
+                <div class="moment-card" data-deletable="true">
+                    <img src="./images/juun20.jpg" alt="Debut Stage" onclick="changeImage(this)">
+                    <div class="moment-overlay">
+                        <h3 data-en="Debut Stage" data-ko="데뷔 무대">Debut Stage</h3>
+                        <p data-en="February 24, 2025" data-ko="2025년 2월 24일">February 24, 2025</p>
+                    </div>
+                    <button class="delete-btn" onclick="deleteContent(this)">×</button>
+                </div>
+                
+                <div class="moment-card" data-deletable="true">
+                    <img src="./images/juun4.jpg" alt="First Win" onclick="changeImage(this)">
+                    <div class="moment-overlay">
+                        <h3 data-en="First Win" data-ko="첫 번째 1위">First Win</h3>
+                        <p data-en="November 5, 2025" data-ko="2025년 11월 5일">November 5, 2025</p>
+                    </div>
+                    <button class="delete-btn" onclick="deleteContent(this)">×</button>
+                </div>
+                
+                <div class="moment-card" data-deletable="true">
+                    <img src="./images/juun5.jpg" alt="WVS Reply" onclick="changeImage(this)">
+                    <div class="moment-overlay">
+                        <h3 data-en="She Replied!" data-ko="답장 왔어요!">She Replied!</h3>
+                        <p data-en="December 12, 2025" data-ko="2025년 12월 12일">December 12, 2025</p>
+                    </div>
+                    <button class="delete-btn" onclick="deleteContent(this)">×</button>
+                </div>
+                
+                <div class="moment-card" data-deletable="true">
+                    <img src="./images/juun6.jpg" alt="First Concert" onclick="changeImage(this)">
+                    <div class="moment-overlay">
+                        <h3 data-en="First Concert" data-ko="첫 콘서트">First Concert</h3>
+                        <p data-en="December 25, 2025" data-ko="2025년 12월 25일">December 25, 2025</p>
+                    </div>
+                    <button class="delete-btn" onclick="deleteContent(this)">×</button>
+                </div>
+                
+                <div class="moment-card" data-deletable="true">
+                    <img src="./images/juun7.jpg" alt="Her Birthday" onclick="changeImage(this)">
+                    <div class="moment-overlay">
+                        <h3 data-en="Her Birthday" data-ko="그녀의 생일">Her Birthday</h3>
+                        <p data-en="December 3, 2025" data-ko="2025년 12월 3일">December 3, 2025</p>
+                    </div>
+                    <button class="delete-btn" onclick="deleteContent(this)">×</button>
+                </div>
+                
+                <div class="moment-card" data-deletable="true">
+                    <img src="./images/juun8.jpg" alt="Funny Moment" onclick="changeImage(this)">
+                    <div class="moment-overlay">
+                        <h3 data-en="Funny Moment" data-ko="웃긴 순간">Funny Moment</h3>
+                        <p data-en="January 15, 2026" data-ko="2026년 1월 15일">January 15, 2026</p>
+                    </div>
+                    <button class="delete-btn" onclick="deleteContent(this)">×</button>
+                </div>
+            </div>
+            <button class="add-card-btn" onclick="addMomentCard()">+ Add New Moment</button>
+        </div>
+    </section>
+
+    <!-- 我的收藏 -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="Angel's Collection" data-ko="Angel의 컬렉션">Angel's Collection</h2>
+                <div class="divider"></div>
+                <p data-en="All the albums and merchandise I have collected" 
+                   data-ko="내가 모은 모든 앨범과 굿즈">
+                    All the albums and merchandise I have collected
+                </p>
+            </div>
+            
+            <div class="collection-grid">
+                <div class="collection-card" data-deletable="true">
+                    <img src="./images/juun9.jpg" alt="The Chase">
+                    <div class="collection-info">
+                        <h3>The Chase</h3>
+                        <p class="collection-type" data-en="Single Album" data-ko="싱글 앨범">Single Album</p>
+                        <p class="collection-date" data-en="Purchased: Feb 25, 2025" data-ko="구매일: 2025.02.25">Purchased: Feb 25, 2025</p>
+                    </div>
+                    <button class="delete-btn" onclick="deleteContent(this)">×</button>
+                </div>
+                
+                <div class="collection-card" data-deletable="true">
+                    <img src="./images/juun10.jpg" alt="FOCUS">
+                    <div class="collection-info">
+                        <h3>FOCUS</h3>
+                        <p class="collection-type" data-en="Mini Album" data-ko="미니 앨범">Mini Album</p>
+                        <p class="collection-date" data-en="Purchased: Oct 20, 2025" data-ko="구매일: 2025.10.20">Purchased: Oct 20, 2025</p>
+                    </div>
+                    <button class="delete-btn" onclick="deleteContent(this)">×</button>
+                </div>
+                
+                <div class="collection-card" data-deletable="true">
+                    <img src="./images/juun19.jpg" alt="Lightstick">
+                    <div class="collection-info">
+                        <h3 data-en="Official Lightstick" data-ko="공식 응원봉">Official Lightstick</h3>
+                        <p class="collection-type" data-en="Merchandise" data-ko="굿즈">Merchandise</p>
+                        <p class="collection-date" data-en="Purchased: Nov 1, 2025" data-ko="구매일: 2025.11.01">Purchased: Nov 1, 2025</p>
+                    </div>
+                    <button class="delete-btn" onclick="deleteContent(this)">×</button>
+                </div>
+                
+                <div class="collection-card" data-deletable="true">
+                    <img src="./images/juun12.jpg" alt="Photocard">
+                    <div class="collection-info">
+                        <h3 data-en="JUUN Photocard" data-ko="주은 포토카드">JUUN Photocard</h3>
+                        <p class="collection-type" data-en="Photocard" data-ko="포토카드">Photocard</p>
+                        <p class="collection-date" data-en="Pulled: Oct 22, 2025" data-ko="뽑은 날: 2025.10.22">Pulled: Oct 22, 2025</p>
+                    </div>
+                    <button class="delete-btn" onclick="deleteContent(this)">×</button>
+                </div>
+            </div>
+            <button class="add-card-btn" onclick="addCollectionCard()">+ Add New Collection</button>
+        </div>
+    </section>
+
+    <!-- 我的回忆 -->
+    <section id="memories" class="memories">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="Angel's Memories" data-ko="Angel의 추억">Angel's Memories with JUUN</h2>
+                <div class="divider"></div>
+                <p data-en="Write down my thoughts and feelings about each moment" 
+                   data-ko="각 순간에 대한 나의 생각과 감정을 적어보세요">
+                    Write down my thoughts and feelings about each moment
+                </p>
+            </div>
+            
+            <div class="add-memory">
+                <h3 data-en="Add New Memory" data-ko="새 추억 추가">Add New Memory</h3>
+                <form id="memory-form">
+                    <div class="form-group">
+                        <label for="memory-date" data-en="Date" data-ko="날짜">Date</label>
+                        <input type="date" id="memory-date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="memory-title" data-en="Title" data-ko="제목">Title</label>
+                        <input type="text" id="memory-title" placeholder="Memory title..." required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="memory-content" data-en="Angel's Memory" data-ko="Angel의 추억">Angel's Memory</label>
+                        <textarea id="memory-content" rows="4" placeholder="Write your memory here..." required maxlength="500"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" data-en="Save Memory" data-ko="추억 저장">Save Memory</button>
+                </form>
+            </div>
+            
+                        <!-- 回忆时间线（最新的在最上面） -->
+            <div class="timeline" id="timeline">
+                <!-- 紫色爱心装饰 -->
+                <div class="timeline-heart heart1">💜</div>
+                <div class="timeline-heart heart2">💜</div>
+                <div class="timeline-heart heart3">💜</div>
+                
+                <!-- 最新的回忆在最上面 -->
+                <div class="timeline-item card-3d">
+                    <div class="timeline-date">2026-06-09</div>
+                    <div class="timeline-content">
+                        <button class="timeline-delete-btn" onclick="deleteMemory(this, '2026-06-09', '此时此刻我很想你哦小恩', '我们快点见面吧！')" title="Delete">×</button>
+                        <button class="timeline-translate-btn" onclick="translateMemory(this)" title="Translate to Korean">번역</button>
+                        <h3>此时此刻我很想你哦小恩</h3>
+                        <p data-ko="">我们快点见面吧！</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item card-3d">
+                    <div class="timeline-date">2026-02-21</div>
+                    <div class="timeline-content">
+                        <button class="timeline-delete-btn" onclick="deleteMemory(this, '2026-02-21', '属于她们和我们之间的第一场FM', '我们主恩突然就长大啦 🐱')" title="Delete">×</button>
+                        <button class="timeline-translate-btn" onclick="translateMemory(this)" title="Translate to Korean">번역</button>
+                        <h3>属于她们和我们之间的第一场FM</h3>
+                        <p data-ko="">我们主恩突然就长大啦 🐱</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item card-3d">
+                    <div class="timeline-date">2025-12-12</div>
+                    <div class="timeline-content">
+                        <button class="timeline-delete-btn" onclick="deleteMemory(this, '2025-12-12', 'She Replied To Me!', 'I left a comment on WVS this morning telling her how much I love her dance. To my absolute shock, she replied! I screamed so loud my mom came running. This is the best day of my life.')" title="Delete">×</button>
+                        <button class="timeline-translate-btn" onclick="translateMemory(this)" title="Translate to Korean">번역</button>
+                        <h3 data-en="She Replied To Me!" data-ko="그녀가 저에게 답장했어요!">She Replied To Me!</h3>
+                        <p data-en="I left a comment on WVS this morning telling her how much I love her dance. To my absolute shock, she replied! I screamed so loud my mom came running. This is the best day of my life." data-ko="오늘 아침 WVS에 그녀의 춤을 정말 좋아한다고 댓글을 남겼어요. 정말 충격적이게도 그녀가 답장을 해줬어요! 너무 소리 지르다가 엄마가 달려오셨어요. 제 인생 최고의 날이에요.">I left a comment on WVS this morning telling her how much I love her dance. To my absolute shock, she replied! I screamed so loud my mom came running. This is the best day of my life.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item card-3d">
+                    <div class="timeline-date">2025-11-05</div>
+                    <div class="timeline-content">
+                        <button class="timeline-delete-btn" onclick="deleteMemory(this, '2025-11-05', 'First Win!', 'I cried when they announced the winner. Seeing her tear up on stage made my heart ache. All her hard work finally paid off. I am so proud of her.')" title="Delete">×</button>
+                        <button class="timeline-translate-btn" onclick="translateMemory(this)" title="Translate to Korean">번역</button>
+                        <h3 data-en="First Win!" data-ko="첫 번째 1위!">First Win!</h3>
+                        <p data-en="I cried when they announced the winner. Seeing her tear up on stage made my heart ache. All her hard work finally paid off. I am so proud of her." data-ko="우승자 발표가 나왔을 때 저는 울었어요. 무대에서 눈물 흘리는 그녀를 보니 마음이 아팠어요. 그녀의 모든 노력이 마침내 보상을 받았어요. 그녀가 정말 자랑스러워요.">I cried when they announced the winner. Seeing her tear up on stage made my heart ache. All her hard work finally paid off. I am so proud of her.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item card-3d">
+                    <div class="timeline-date">2025-02-24</div>
+                    <div class="timeline-content">
+                        <button class="timeline-delete-btn" onclick="deleteMemory(this, '2025-02-24', 'The Day It All Began', 'Today was her debut! I watched the stage live and could not take my eyes off her. Her dance was absolutely incredible. I knew right then that she would be someone special to me.')" title="Delete">×</button>
+                        <button class="timeline-translate-btn" onclick="translateMemory(this)" title="Translate to Korean">번역</button>
+                        <h3 data-en="The Day It All Began" data-ko="모든 것이 시작된 날">我们小恩出道啦</h3>
+                        <p data-en="Today was her debut! I watched the stage live and could not take my eyes off her. Her dance was absolutely incredible. I knew right then that she would be someone special to me." data-ko="오늘 그녀의 데뷔 날이에요! 생방송으로 무대를 보면서 그녀에게서 눈을 뗄 수 없었어요. 그녀의 춤은 정말 대단했어요. 바로 그때 그녀가 저에게 특별한 사람이 될 거라는 걸 알았어요.">希望她永远幸福,永远被爱,快乐地享受舞台,Angel focus on JUUN forever</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- 💌 信件专区 HTML -->
+    <section id="angel-letters">
+        <h2 class="letters-title">💜 To My Dearest JUUN</h2>
+        <button id="open-letter-btn" class="write-btn">✉️ Write a letter to JUUN</button>
+        <div id="letters-container"></div>
+    </section>
+
+    <!-- ✏️ 写信弹窗 HTML -->
+    <div id="letter-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-letter-btn" class="close-btn">×</button>
+            <h3 style="text-align:center; color:var(--primary); margin-top:0;">✏️ For JUUN</h3>
+            <input type="text" id="letter-title-input" class="letter-input" placeholder="Letter Title">
+            <textarea id="letter-body-input" class="letter-textarea" placeholder="Dear JUUN, I want to tell you..." maxlength="500"></textarea>
+            <div class="paper-picker">
+                <label>📜 Select Paper Style:</label>
+                <div class="paper-options">
+                    <div class="paper-option paper-pattern-1" data-pattern="1"></div>
+                    <div class="paper-option paper-pattern-2" data-pattern="2"></div>
+                    <div class="paper-option paper-pattern-3" data-pattern="3"></div>
+                    <div class="paper-option paper-pattern-4" data-pattern="4"></div>
+                    <div class="paper-option paper-pattern-5" data-pattern="5"></div>
+                    <div class="paper-option paper-pattern-6" data-pattern="6"></div>
+                    <div class="paper-option paper-pattern-7" data-pattern="7"></div>
+                    <div class="paper-option paper-pattern-8" data-pattern="8"></div>
+                    <div class="paper-option paper-pattern-9" data-pattern="9"></div>
+                    <div class="paper-option paper-pattern-10" data-pattern="10"></div>
+                </div>
+            </div>
+            <button id="save-letter-btn" class="save-btn">💜 Save & Display</button>
+        </div>
+    </div>
+
+    <!-- ⚙️ 信件逻辑 JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('letter-modal');
+            const openBtn = document.getElementById('open-letter-btn');
+            const closeBtn = document.getElementById('close-letter-btn');
+            const saveBtn = document.getElementById('save-letter-btn');
+            const container = document.getElementById('letters-container');
+            const titleInput = document.getElementById('letter-title-input');
+            const bodyInput = document.getElementById('letter-body-input');
+            const paperOptions = document.querySelectorAll('.paper-option');
+            let selectedPattern = 1;
+
+            // 信纸样式选择
+            paperOptions.forEach((option, index) => {
+                option.addEventListener('click', function() {
+                    paperOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                    selectedPattern = index + 1;
+                });
+            });
+            // 默认选中第一个
+            paperOptions[0].classList.add('selected');
+
+            // 1. 渲染信件
+            function render() {
+                const letters = JSON.parse(localStorage.getItem('juun_letters') || '[]');
+                container.innerHTML = '';
+                
+                if(letters.length === 0) {
+                    container.innerHTML = '<p style="text-align:center;color:#ccc;">还没有信件，快写下第一封吧 💜</p>';
+                    return;
+                }
+
+                // 倒序显示
+                [...letters].reverse().forEach((l, index) => {
+                    const div = document.createElement('div');
+                    const pattern = l.pattern || 1;
+                    div.className = `letter-card card-3d paper-pattern-${pattern}`;
+                    div.dataset.index = index;
+                    
+                    // 创建删除按钮
+                    const delBtn = document.createElement('button');
+                    delBtn.className = 'del-letter-btn';
+                    delBtn.textContent = '🗑️';
+                    delBtn.title = '删除';
+                    delBtn.addEventListener('click', () => deleteLetter(index));
+                    
+                    // 创建内容容器
+                    const contentDiv = document.createElement('div');
+                    contentDiv.className = 'letter-content-wrapper';
+                    contentDiv.innerHTML = `<div class="letter-card-date">${l.date}</div>
+                                     <div class="letter-card-title">${l.title}</div>
+                                     <div class="letter-card-body">${l.body}</div>`;
+                    
+                    div.appendChild(delBtn);
+                    div.appendChild(contentDiv);
+                    container.appendChild(div);
+                });
+            }
+
+            // 删除信件
+            function deleteLetter(index) {
+                if (confirm('确定要删除这封信吗？')) {
+                    const letters = JSON.parse(localStorage.getItem('juun_letters') || '[]');
+                    letters.splice(letters.length - 1 - index, 1);
+                    localStorage.setItem('juun_letters', JSON.stringify(letters));
+                    render();
+                }
+            }
+
+            // 2. 打开弹窗
+            openBtn.onclick = function() {
+                modal.style.display = 'flex';
+                // 重置选中状态
+                paperOptions.forEach(opt => opt.classList.remove('selected'));
+                paperOptions[0].classList.add('selected');
+                selectedPattern = 1;
+            };
+
+            // 3. 关闭弹窗
+            closeBtn.onclick = function() { modal.style.display = 'none'; };
+            modal.onclick = function(e) { if(e.target === modal) modal.style.display = 'none'; };
+
+            // 4. 保存信件
+            saveBtn.onclick = function() {
+                const t = titleInput.value.trim();
+                const b = bodyInput.value.trim();
+                if(!t && !b) return alert('请写点什么再保存哦 💜');
+                
+                const letters = JSON.parse(localStorage.getItem('juun_letters') || '[]');
+                letters.push({
+                    title: t || '无题的信',
+                    body: b,
+                    date: new Date().toLocaleString('zh-CN'),
+                    pattern: selectedPattern
+                });
+                localStorage.setItem('juun_letters', JSON.stringify(letters));
+                
+                titleInput.value = ''; 
+                bodyInput.value = '';
+                modal.style.display = 'none';
+                render();
+            };
+
+            // 初始化
+            render();
+        });
+    </script>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">💜 Angel Focus on JUUN Forever</div>
+            <p class="footer-text" data-en="Created by Angel with all my love. All memories are mine alone, forever." 
+               data-ko="Angel이 온 마음을 담아 만든 웹사이트입니다. 모든 추억은 영원히 저만의 것입니다.">
+                Created by Angel with all my love. All memories are mine alone, forever.
+            </p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Angel's JUUN Memories | Hearts2Hearts</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 卡通装饰元素（直接用img标签，100%显示） -->
+    <img src="./images/juun.png" class="decoration dec1" alt="JUUN">
+    <img src="./images/juun.png" class="decoration dec2" alt="JUUN">
+    <img src="./images/juun.png" class="decoration dec3" alt="JUUN">
+    <img src="./images/juun.png" class="decoration dec4" alt="JUUN">
+    <img src="./images/juun.png" class="decoration dec5" alt="JUUN">
+<!-- JavaScript -->
+<script>
+    // 全局变量
+    let currentLang = 'en';
+    
+    // 等待页面完全加载后执行所有功能
+    window.addEventListener('DOMContentLoaded', () => {
+            // ======================================
+        // ✅ 纯JS自动排序回忆（无需修改任何HTML）
+        // ======================================
+        function sortMemoriesByDate() {
+            const timeline = document.getElementById('timeline');
+            const memoryItems = Array.from(timeline.querySelectorAll('.timeline-item'));
+            
+            // 按日期从新到旧排序
+            memoryItems.sort((a, b) => {
+                const dateA = new Date(a.querySelector('.timeline-date').textContent);
+                const dateB = new Date(b.querySelector('.timeline-date').textContent);
+                return dateB - dateA; // 降序排列：最新的在最上面
+            });
+            
+            // 清空原有内容并重新插入排序后的元素
+            timeline.innerHTML = '';
+            memoryItems.forEach(item => timeline.appendChild(item));
+        }
+        
+        // 页面加载完成后自动执行排序
+        sortMemoriesByDate();
+        // ======================================
+        // 1. 基础功能（语言切换、菜单、滚动等）
+        // ======================================
+        
+        // 语言切换功能
+        const langEnBtn = document.getElementById('lang-en');
+        const langKoBtn = document.getElementById('lang-ko');
+        
+        window.switchLanguage = function(lang) {
+            currentLang = lang;
+            
+            // 更新按钮状态
+            if (lang === 'en') {
+                langEnBtn.classList.add('active');
+                langKoBtn.classList.remove('active');
+            } else {
+                langKoBtn.classList.add('active');
+                langEnBtn.classList.remove('active');
+            }
+            
+            // 更新所有文本内容
+            document.querySelectorAll('[data-en]').forEach(element => {
+                element.textContent = element.getAttribute(`data-${lang}`);
+            });
+            
+            // 更新HTML语言属性
+            document.documentElement.lang = lang;
+        }
+        
+        langEnBtn.addEventListener('click', () => switchLanguage('en'));
+        langKoBtn.addEventListener('click', () => switchLanguage('ko'));
+        
+        // 移动端菜单切换
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // 关闭移动端菜单
+                mobileMenu.style.display = 'none';
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // 导航栏滚动效果
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+        
+        // 回忆功能由下方支持图片上传的版本处理
+        
+        // 韩语翻译数据库
+        const koreanTranslationDB = {
+            // 常见词汇和短句
+            "我爱你": "사랑해요",
+            "想你": "보고 싶어요",
+            "我想你": "보고 싶어요",
+            "永远": "영원히",
+            "永远爱你": "영원히 사랑해요",
+            "加油": "파이팅!",
+            "祝贺": "축하해요",
+            "恭喜": "축하해요",
+            "生日快乐": "생일 축하해요",
+            "好开心": "정말 행복해요",
+            "好可爱": "정말 귀여워요",
+            "好漂亮": "정말 예뻐요",
+            "好帅": "정말 멋있어요",
+            "我们会见面的": "우리 만날 거예요",
+            "快见面吧": "빨리 만나자",
+            "我们快点见面吧": "우리 빨리 만나자",
+            "主恩": "주은",
+            "小恩": "주은아",
+            "此时此刻我很想你哦小恩": "지금 이 순간 주은아 많이 보고 싶어요",
+            "我们快点见面吧！": "우리 빨리 만나자!",
+            "属于她们和我们之间的第一场FM": "그들과 우리 사이의 첫 번째 FM",
+            "我们主恩突然就长大啦": "우리 주은이 어느새大き았어",
+            "希望她永远幸福": "그녀가 영원히 행복하길 바래요",
+            "永远被爱": "영원히 사랑받아요",
+            "快乐地享受舞台": "즐겁게 무대 즐겨요",
+            "Angel focus on JUUN forever": "Angel은 영원히 주은을 응원해요",
+            "要一直健康": "항상 건강해야 해요",
+            "要一直快乐": "항상 행복해야 해요",
+            "我们小恩出道啦": "우리 주은 데뷔했어",
+            "出道": "데뷔",
+            "第一场演唱会": "첫 번째 콘서트",
+            "粉丝见面会": "팬미팅",
+            "我会永远支持你": "영원히 응원할게요",
+            "我的宝贝": "나의 보물",
+            "我的天使": "나의 천사",
+            "我的女神": "나의 여신",
+            "我心中的星星": "내 마음속의 별",
+            "最棒的": "최고야",
+            "最优秀的": "가장 우수한",
+            "最漂亮的": "가장 예쁜",
+            "今天也很想你": "오늘도 많이 보고 싶어요",
+            "每天都想你": "매일 보고 싶어요",
+            "好喜欢你": "정말 좋아해요",
+            " crush": "짝사랑",
+            " love": "사랑",
+            " forever": "영원히",
+            " thank you": "감사해요",
+            " sorry": "미안해요",
+            " good morning": "좋은 아침",
+            " good night": "잘 자요",
+            " good": "좋아",
+            " bad": "나빠",
+            " happy": "행복해",
+            " sad": "슬퍼",
+            " angry": "화나",
+            " excited": "신나",
+            " love you": "사랑해요",
+            " miss you": "보고 싶어요",
+            " see you": "再见",
+            " bye": "잘 가",
+            " hello": "안녕",
+            " welcome": "환영해요"
+        };
+        
+        // 翻译功能
+        function translateMemory(btn) {
+            const timelineItem = btn.closest('.timeline-item');
+            const pElement = timelineItem.querySelector('.timeline-content p');
+            const currentText = pElement.textContent;
+            
+            // 检查是否已经翻译
+            const savedKo = pElement.getAttribute('data-ko');
+            
+            if (savedKo && savedKo !== '') {
+                // 已经有翻译，切换回原文
+                const originalText = pElement.getAttribute('data-en') || currentText;
+                if (pElement.getAttribute('data-en') === undefined) {
+                    pElement.setAttribute('data-en', savedKo);
+                }
+                pElement.textContent = originalText;
+                pElement.setAttribute('data-ko', '');
+                btn.textContent = '번역';
+            } else {
+                // 进行翻译
+                let translatedText = currentText;
+                
+                // 优先使用精确匹配
+                if (koreanTranslationDB[currentText]) {
+                    translatedText = koreanTranslationDB[currentText];
+                } else {
+                    // 尝试逐句翻译
+                    let tempText = currentText;
+                    for (const [cn, ko] of Object.entries(koreanTranslationDB)) {
+                        tempText = tempText.replace(new RegExp(cn, 'g'), ko);
+                    }
+                    if (tempText !== currentText) {
+                        translatedText = tempText;
+                    }
+                }
+                
+                // 保存原文并显示翻译
+                if (!pElement.getAttribute('data-en')) {
+                    pElement.setAttribute('data-en', currentText);
+                }
+                pElement.textContent = translatedText;
+                pElement.setAttribute('data-ko', translatedText);
+                btn.textContent = '원문';
+            }
+        }
+        
+        // ======================================
+        // 2. 修复版生日倒计时（精确到秒+双语）
+        // ======================================
+        const subtitle = document.querySelector('.hero-text .subtitle');
+        const countdown = document.createElement('div');
+        countdown.id = 'birthday-countdown';
+        countdown.style.marginTop = '15px';
+        countdown.style.color = 'var(--primary)';
+        countdown.style.fontWeight = 'bold';
+        countdown.style.fontSize = '1.1rem';
+        subtitle.after(countdown);
+        
+        function updateCountdown() {
+            const now = new Date();
+            // 金主恩生日：12月3日
+            let birthday = new Date(now.getFullYear(), 11, 3);
+            
+            // 如果今年生日已经过了，就显示明年的
+            if (now > birthday) {
+                birthday = new Date(now.getFullYear() + 1, 11, 3);
+            }
+            
+            // 精确计算剩余时间
+            const diffTime = birthday - now;
+            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+            const diffHours = Math.floor((diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const diffMinutes = Math.floor((diffTime % (1000 * 60 * 60)) / (1000 * 60));
+            const diffSeconds = Math.floor((diffTime % (1000 * 60)) / 1000);
+            
+            // 生日当天显示祝福
+            if (diffDays === 0 && diffHours === 0 && diffMinutes === 0 && diffSeconds <= 0) {
+                countdown.textContent = currentLang === 'en' 
+                    ? '🎉 HAPPY BIRTHDAY JUUN! 🎉' 
+                    : '🎉 주은 생일 축하해! 🎉';
+            } else {
+                countdown.textContent = currentLang === 'en' 
+                    ? `🎂 ${diffDays}d ${diffHours}h ${diffMinutes}m until JUUN's birthday` 
+                    : `🎂 주은 생일까지 ${diffDays}일 ${diffHours}시간 ${diffMinutes}분 남았어요`;
+            }
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        
+        // 监听语言切换，自动更新倒计时
+        const originalSwitchLanguage = switchLanguage;
+        window.switchLanguage = function(lang) {
+            originalSwitchLanguage(lang);
+            setTimeout(updateCountdown, 100);
+        };
+        
+        // ======================================
+        // 3. 自定义鼠标指针（直接变成紫色小卡通）
+        // ======================================
+        // 隐藏系统默认鼠标
+        document.body.style.cursor = 'none';
+        
+        // 创建自定义鼠标
+        const customCursor = document.createElement('img');
+        customCursor.src = './images/juun.png';
+        customCursor.style.position = 'fixed';
+        customCursor.style.width = '32px';
+        customCursor.style.height = '32px';
+        customCursor.style.pointerEvents = 'none';
+        customCursor.style.zIndex = '99999'; // 最高层级
+        customCursor.style.transform = 'translate(-50%, -50%)'; // 中心点对齐
+        document.body.appendChild(customCursor);
+        
+        // 跟随鼠标移动
+        document.addEventListener('mousemove', (e) => {
+            customCursor.style.left = e.clientX + 'px';
+            customCursor.style.top = e.clientY + 'px';
+        });
+        
+        // 点击时缩放效果
+        document.addEventListener('mousedown', () => {
+            customCursor.style.transform = 'translate(-50%, -50%) scale(0.8)';
+        });
+        
+        document.addEventListener('mouseup', () => {
+            customCursor.style.transform = 'translate(-50%, -50%) scale(1)';
+        });
+        
+        // 移动端隐藏自定义鼠标
+        if ('ontouchstart' in window) {
+            customCursor.style.display = 'none';
+            document.body.style.cursor = 'auto';
+        }
+        
+        // ======================================
+        // 4. 自动漂浮的紫色爱心背景
+        // ======================================
+        function createFloatingHeart() {
+            const heart = document.createElement('div');
+            heart.innerHTML = '💜';
+            heart.style.position = 'fixed';
+            heart.style.bottom = '-50px';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.fontSize = Math.random() * 20 + 10 + 'px';
+            heart.style.opacity = Math.random() * 0.5 + 0.2;
+            heart.style.pointerEvents = 'none';
+            heart.style.zIndex = '-1';
+            heart.style.animation = `floatUp ${Math.random() * 10 + 10}s linear forwards`;
+            document.body.appendChild(heart);
+            
+            // 动画结束后移除
+            setTimeout(() => heart.remove(), 20000);
+        }
+        
+        // 添加动画样式
+        const heartStyle = document.createElement('style');
+        heartStyle.textContent = `
+            @keyframes floatUp {
+                0% { transform: translateY(0) rotate(0deg); opacity: 0.7; }
+                100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(heartStyle);
+        
+        // 每2秒生成一个爱心
+        setInterval(createFloatingHeart, 2000);
+        
+        // 页面加载时先生成5个
+        for (let i = 0; i < 5; i++) {
+            setTimeout(createFloatingHeart, i * 500);
+        }
+        
+        // ======================================
+        // 5. 卡片悬停发光效果
+        // ======================================
+        const cards = document.querySelectorAll('.moment-card, .collection-card');
+        
+        cards.forEach(card => {
+            card.style.transition = 'all 0.3s ease';
+            
+            card.addEventListener('mouseenter', () => {
+                card.style.boxShadow = '0 0 25px rgba(139, 92, 246, 0.7), 0 4px 12px rgba(0, 0, 0, 0.1)';
+                card.style.transform = 'translateY(-5px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+                card.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+        
+        // ======================================
+        // 6. 每日专属情话（双语+每天不同）
+        // ======================================
+        const loveMessages = [
+            { en: "Every day with you is a gift 💜", ko: "당신과 함께하는 매일이 선물이에요 💜" },
+            { en: "You are my favorite star in the sky", ko: "당신은 하늘에서 제가 가장 좋아하는 별이에요" },
+            { en: "Your smile lights up my whole world", ko: "당신의 미소가 제 세상을 밝혀줘요" },
+            { en: "I will always be by your side", ko: "제가 항상 당신 곁에 있을게요" },
+            { en: "Thank you for being born", ko: "태어나줘서 고마워요" },
+            { en: "You make me want to be a better person", ko: "당신은 제가 더 좋은 사람이 되고 싶게 만들어요" },
+            { en: "My heart beats only for you", ko: "제 심장은 오직 당신을 위해 뛰어요" },
+            { en: "Forever your fan, forever your Angel", ko: "영원히 당신의 팬, 영원히 당신의 Angel" },
+            { en: "You are the reason I smile every day", ko: "당신은 제가 매일 웃는 이유에요" },
+            { en: "I'm so lucky to have you in my life", ko: "제 인생에 당신이 있어서 정말 행운이에요" }
+        ];
+        
+        // 根据日期生成固定的随机数（每天显示同一句）
+        const today = new Date();
+        const dayIndex = today.getFullYear() * 366 + today.getMonth() * 31 + today.getDate();
+        const messageIndex = dayIndex % loveMessages.length;
+        
+        // 添加到页脚
+        const footerText = document.querySelector('.footer-text');
+        const loveMessage = document.createElement('div');
+        loveMessage.id = 'daily-love';
+        loveMessage.style.marginTop = '15px';
+        loveMessage.style.fontStyle = 'italic';
+        loveMessage.style.color = 'var(--secondary)';
+        loveMessage.textContent = loveMessages[messageIndex][currentLang];
+        footerText.after(loveMessage);
+        
+        // 语言切换时更新情话
+        window.switchLanguage = function(lang) {
+            originalSwitchLanguage(lang);
+            setTimeout(updateCountdown, 100);
+            document.getElementById('daily-love').textContent = loveMessages[messageIndex][lang];
+        };
+        
+        // ======================================
+        // 7. 点击页面出现紫色爱心特效
+        // ======================================
+        document.addEventListener('click', (e) => {
+            // 排除按钮和链接的点击
+            if (e.target.tagName === 'BUTTON' || e.target.tagName === 'A' || e.target.closest('button') || e.target.closest('a')) {
+                return;
+            }
+            
+            const heart = document.createElement('div');
+            heart.innerHTML = '💜';
+            heart.style.position = 'fixed';
+            heart.style.left = e.clientX + 'px';
+            heart.style.top = e.clientY + 'px';
+            heart.style.fontSize = '28px';
+            heart.style.pointerEvents = 'none';
+            heart.style.zIndex = '9999';
+            heart.style.animation = 'clickFloat 1s ease-out forwards';
+            document.body.appendChild(heart);
+            
+            setTimeout(() => heart.remove(), 1000);
+        });
+        
+        // 添加点击爱心动画样式
+        const clickStyle = document.createElement('style');
+        clickStyle.textContent = `
+            @keyframes clickFloat {
+                0% { transform: translateY(0) scale(1); opacity: 1; }
+                100% { transform: translateY(-80px) scale(1.5); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(clickStyle);
+    });
+        // ======================================
+        // 8. 顶部滚动进度条（紫色渐变）
+        // ======================================
+        const progressBar = document.createElement('div');
+        progressBar.style.position = 'fixed';
+        progressBar.style.top = '0';
+        progressBar.style.left = '0';
+        progressBar.style.height = '4px';
+        progressBar.style.background = 'linear-gradient(90deg, #8B5CF6, #A78BFA, #C4B5FD)';
+        progressBar.style.zIndex = '10001';
+        progressBar.style.width = '0%';
+        progressBar.style.transition = 'width 0.1s ease';
+        document.body.appendChild(progressBar);
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            progressBar.style.width = scrollPercent + '%';
+        });
+
+        // ======================================
+        // 9. 紫色粒子跟随鼠标（梦幻效果）
+        // ======================================
+        function createParticle(x, y) {
+            const particle = document.createElement('div');
+            particle.style.position = 'fixed';
+            particle.style.left = x + 'px';
+            particle.style.top = y + 'px';
+            particle.style.width = '6px';
+            particle.style.height = '6px';
+            particle.style.borderRadius = '50%';
+            particle.style.backgroundColor = '#A78BFA';
+            particle.style.pointerEvents = 'none';
+            particle.style.zIndex = '99998';
+            particle.style.animation = 'particleFade 1.5s ease-out forwards';
+            document.body.appendChild(particle);
+
+            setTimeout(() => particle.remove(), 1500);
+        }
+
+        // 添加粒子动画样式
+        const particleStyle = document.createElement('style');
+        particleStyle.textContent = `
+            @keyframes particleFade {
+                0% { transform: scale(1) translate(0, 0); opacity: 1; }
+                100% { transform: scale(0) translate(${Math.random() * 100 - 50}px, ${Math.random() * -100 - 50}px); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(particleStyle);
+
+        // 鼠标移动时生成粒子
+        let particleCount = 0;
+        document.addEventListener('mousemove', (e) => {
+            particleCount++;
+            if (particleCount % 3 === 0) { // 每3像素生成一个，避免太多
+                createParticle(e.clientX, e.clientY);
+            }
+        });
+
+        // ======================================
+        // 10. 隐藏彩蛋（点击logo出现惊喜）
+        // ======================================
+        const logo = document.querySelector('.logo');
+        let clickCount = 0;
+
+        logo.addEventListener('click', (e) => {
+            e.preventDefault();
+            clickCount++;
+            
+            if (clickCount === 5) { // 连续点击5次logo触发
+                clickCount = 0;
+                
+                // 全屏紫色爱心雨
+                for (let i = 0; i < 50; i++) {
+                    setTimeout(() => {
+                        const heart = document.createElement('div');
+                        heart.innerHTML = '💜';
+                        heart.style.position = 'fixed';
+                        heart.style.top = '-50px';
+                        heart.style.left = Math.random() * 100 + 'vw';
+                        heart.style.fontSize = Math.random() * 30 + 20 + 'px';
+                        heart.style.pointerEvents = 'none';
+                        heart.style.zIndex = '99999';
+                        heart.style.animation = `heartRain ${Math.random() * 3 + 2}s linear forwards`;
+                        document.body.appendChild(heart);
+                        
+                        setTimeout(() => heart.remove(), 5000);
+                    }, i * 100);
+                }
+                
+                // 弹出惊喜提示
+                setTimeout(() => {
+                    alert(currentLang === 'en' 
+                        ? '💜 Surprise! JUUN loves you too, Angel! 💜' 
+                        : '💜 서프라이즈! 주은도 Angel을 사랑해요! 💜');
+                }, 2000);
+            }
+        });
+
+        // 添加爱心雨动画样式
+        const rainStyle = document.createElement('style');
+        rainStyle.textContent = `
+            @keyframes heartRain {
+                0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+                100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(rainStyle);
+
+        // ======================================
+        // 11. 页面加载动画（淡入效果）
+        // ======================================
+        document.body.style.opacity = '0';
+        document.body.style.transition = 'opacity 1s ease';
+        
+        setTimeout(() => {
+            document.body.style.opacity = '1';
+        }, 300);
+
+        // ======================================
+        // 12. 键盘快捷键（按空格暂停/播放背景音乐）
+        // ======================================
+        // 创建背景音乐（自动播放）
+        const bgMusic = new Audio('./images/background.mp3'); // 把你的音乐文件放在images文件夹
+        bgMusic.loop = true;
+        bgMusic.volume = 0.3;
+
+        // 创建音乐控制按钮
+        const musicBtn = document.createElement('button');
+        musicBtn.textContent = '🎵';
+        musicBtn.style.position = 'fixed';
+        musicBtn.style.bottom = '20px';
+        musicBtn.style.left = '20px';
+        musicBtn.style.width = '50px';
+        musicBtn.style.height = '50px';
+        musicBtn.style.borderRadius = '50%';
+        musicBtn.style.border = 'none';
+        musicBtn.style.backgroundColor = 'var(--primary)';
+        musicBtn.style.color = 'white';
+        musicBtn.style.fontSize = '20px';
+        musicBtn.style.cursor = 'pointer';
+        musicBtn.style.zIndex = '9999';
+        musicBtn.style.boxShadow = '0 2px 10px rgba(139, 92, 246, 0.3)';
+        document.body.appendChild(musicBtn);
+
+        let isMusicPlaying = false;
+
+        function toggleMusic() {
+            if (isMusicPlaying) {
+                bgMusic.pause();
+                musicBtn.textContent = '🔇';
+                isMusicPlaying = false;
+            } else {
+                bgMusic.play().catch(err => {
+                    console.log('Auto-play prevented by browser:', err);
+                    musicBtn.textContent = '🔇';
+                });
+                musicBtn.textContent = '🎵';
+                isMusicPlaying = true;
+            }
+        }
+
+        musicBtn.addEventListener('click', toggleMusic);
+
+        // 自动播放音乐
+        setTimeout(() => {
+            bgMusic.play().catch(err => {
+                console.log('Auto-play prevented by browser. User interaction required.');
+                isMusicPlaying = false;
+                musicBtn.textContent = '🔇';
+            });
+            isMusicPlaying = true;
+        }, 500);
+
+        // 按空格键切换音乐（仅当非input/textarea焦点时）
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Space' && !e.target.matches('input, textarea, select, [contenteditable="true"]')) {
+                e.preventDefault();
+                toggleMusic();
+            }
+        });
+        // ======================================
+        // ✅ 一键返回顶部按钮（和鼠标图案完全一样）
+        // ======================================
+        const backToTop = document.createElement('img');
+        backToTop.src = './images/juun.png';
+        backToTop.style.position = 'fixed';
+        backToTop.style.bottom = '20px';
+        backToTop.style.right = '20px';
+        backToTop.style.width = '50px';
+        backToTop.style.height = '50px';
+        backToTop.style.borderRadius = '50%';
+        backToTop.style.backgroundColor = 'var(--primary)';
+        backToTop.style.padding = '8px';
+        backToTop.style.boxShadow = '0 4px 15px rgba(139, 92, 246, 0.4)';
+        backToTop.style.cursor = 'pointer';
+        backToTop.style.zIndex = '9999';
+        backToTop.style.opacity = '0';
+        backToTop.style.visibility = 'hidden';
+        backToTop.style.transition = 'all 0.3s ease';
+        backToTop.style.transform = 'translateY(20px)';
+        document.body.appendChild(backToTop);
+        
+        // 滚动超过300px时显示按钮
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.opacity = '1';
+                backToTop.style.visibility = 'visible';
+                backToTop.style.transform = 'translateY(0)';
+            } else {
+                backToTop.style.opacity = '0';
+                backToTop.style.visibility = 'hidden';
+                backToTop.style.transform = 'translateY(20px)';
+            }
+        });
+        
+        // 点击按钮平滑返回顶部
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // ======================================
+        // ✅ 双击任意空白处快速返回顶部
+        // ======================================
+        document.addEventListener('dblclick', (e) => {
+            // 排除按钮、链接、输入框的双击
+            if (!e.target.closest('button') && 
+                !e.target.closest('a') && 
+                !e.target.closest('input') && 
+                !e.target.closest('textarea')) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        });
+
+        // ======================================
+        // ✅ 输入框自定义紫色光标
+        // ======================================
+        const inputStyle = document.createElement('style');
+        inputStyle.textContent = `
+            /* 打字光标变成紫色 */
+            input, textarea {
+                caret-color: #8B5CF6 !important;
+            }
+            
+            /* 聚焦时边框也变成紫色 */
+            input:focus, textarea:focus {
+                outline: none;
+                border-color: #8B5CF6 !important;
+                box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1) !important;
+            }
+        `;
+        document.head.appendChild(inputStyle);
+        // ======================================
+        // ✅ 纯增量回忆删除功能（零修改原有代码）
+        // ======================================
+        (function addMemoryDeleteFeature() {
+            // 1. 添加删除按钮的CSS样式
+            const deleteStyle = document.createElement('style');
+            deleteStyle.textContent = `
+                .delete-memory-btn {
+                    position: absolute;
+                    top: 12px;
+                    right: 12px;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    border: none;
+                    background-color: #f3f4f6;
+                    color: #6b7280;
+                    font-size: 14px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    opacity: 0;
+                    transition: all 0.3s ease;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 10;
+                }
+                
+                .timeline-content:hover .delete-memory-btn {
+                    opacity: 1;
+                }
+                
+                .delete-memory-btn:hover {
+                    background-color: #ef4444 !important;
+                    color: white !important;
+                    transform: scale(1.1);
+                }
+            `;
+            document.head.appendChild(deleteStyle);
+
+            // 2. 给单个回忆添加删除按钮
+            function addDeleteButtonToMemory(memoryItem) {
+                // 如果已经有删除按钮了，就不再添加
+                if (memoryItem.querySelector('.delete-memory-btn')) return;
+
+                const content = memoryItem.querySelector('.timeline-content');
+                if (!content) return;
+
+                const deleteBtn = document.createElement('button');
+                deleteBtn.className = 'delete-memory-btn';
+                deleteBtn.textContent = '✕';
+                deleteBtn.type = 'button';
+
+                // 删除按钮点击事件
+                deleteBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    
+                    // 获取当前语言
+                    const currentLang = document.documentElement.lang || 'en';
+                    
+                    // 确认删除
+                    if (confirm(currentLang === 'en' 
+                        ? 'Are you sure you want to delete this memory?' 
+                        : '정말 이 추억을 삭제하시겠습니까?')) {
+                        
+                        // 提取回忆的日期、标题和内容
+                        const date = memoryItem.querySelector('.timeline-date')?.textContent || '';
+                        const title = content.querySelector('h3')?.textContent || '';
+                        const contentText = content.querySelector('p')?.textContent || '';
+
+                        // 从本地存储中删除
+                        const savedMemories = JSON.parse(localStorage.getItem('juunMemories')) || [];
+                        const updatedMemories = savedMemories.filter(m => 
+                            !(m.date === date && m.title === title && m.content === contentText)
+                        );
+                        localStorage.setItem('juunMemories', JSON.stringify(updatedMemories));
+
+                        // 淡出动画后删除元素
+                        memoryItem.style.opacity = '0';
+                        memoryItem.style.transform = 'translateX(30px)';
+                        memoryItem.style.transition = 'all 0.3s ease';
+                        setTimeout(() => memoryItem.remove(), 300);
+                    }
+                });
+
+                content.appendChild(deleteBtn);
+            }
+
+            // 3. 给所有已有的回忆添加删除按钮
+            document.querySelectorAll('.timeline-item').forEach(addDeleteButtonToMemory);
+
+            // 4. 监听时间线变化，自动给新添加的回忆添加删除按钮
+            const timeline = document.getElementById('timeline');
+            if (timeline) {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach((mutation) => {
+                        mutation.addedNodes.forEach((node) => {
+                            if (node.nodeType === 1 && node.classList.contains('timeline-item')) {
+                                // 延迟一点添加，确保元素完全渲染
+                                setTimeout(() => addDeleteButtonToMemory(node), 100);
+                            }
+                        });
+                    });
+                });
+
+                // 开始监听时间线的子节点变化
+                observer.observe(timeline, {
+                    childList: true,
+                    subtree: false
+                });
+            }
+        })();
+        // ======================================
+        // ✅ 纯增量回忆拖拽排序功能（零修改原有代码）
+        // ======================================
+        (function addMemoryDragSortFeature() {
+            // 1. 添加拖拽排序的CSS样式
+            const dragStyle = document.createElement('style');
+            dragStyle.textContent = `
+                /* 可拖拽的回忆卡片 */
+                .timeline-item {
+                    cursor: grab;
+                    transition: all 0.2s ease;
+                }
+                
+                /* 正在拖动中的卡片 */
+                .timeline-item.dragging {
+                    opacity: 0.5;
+                    transform: scale(1.02);
+                    cursor: grabbing;
+                    z-index: 100;
+                }
+                
+                /* 拖拽目标位置提示线 */
+                .timeline-drop-indicator {
+                    height: 4px;
+                    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+                    margin: -2px 0;
+                    border-radius: 2px;
+                    pointer-events: none;
+                }
+                
+                /* 移动端禁用拖拽 */
+                @media (max-width: 767px) {
+                    .timeline-item {
+                        cursor: default;
+                    }
+                }
+            `;
+            document.head.appendChild(dragStyle);
+
+            // 全局变量
+            let draggedItem = null;
+            let dropIndicator = null;
+
+            // 2. 给单个回忆添加拖拽功能
+            function makeMemoryDraggable(memoryItem) {
+                // 如果已经是可拖拽的，就不再添加
+                if (memoryItem.draggable) return;
+
+                // 设置为可拖拽
+                memoryItem.draggable = true;
+
+                // 拖拽开始
+                memoryItem.addEventListener('dragstart', (e) => {
+                    draggedItem = memoryItem;
+                    memoryItem.classList.add('dragging');
+                    // 创建拖拽提示线
+                    dropIndicator = document.createElement('div');
+                    dropIndicator.className = 'timeline-drop-indicator';
+                    // 设置拖拽数据（必须，否则Firefox不生效）
+                    e.dataTransfer.effectAllowed = 'move';
+                    e.dataTransfer.setData('text/plain', '');
+                });
+
+                // 拖拽结束
+                memoryItem.addEventListener('dragend', () => {
+                    memoryItem.classList.remove('dragging');
+                    // 移除提示线
+                    if (dropIndicator && dropIndicator.parentNode) {
+                        dropIndicator.remove();
+                    }
+                    draggedItem = null;
+                    // 保存新的排序到本地存储
+                    saveMemoryOrder();
+                });
+
+                // 拖拽经过
+                memoryItem.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    if (!draggedItem || draggedItem === memoryItem) return;
+
+                    // 计算鼠标位置，判断应该插入到前面还是后面
+                    const rect = memoryItem.getBoundingClientRect();
+                    const midY = rect.top + rect.height / 2;
+                    
+                    // 移除之前的提示线
+                    if (dropIndicator.parentNode) {
+                        dropIndicator.remove();
+                    }
+
+                    // 插入到前面或后面
+                    if (e.clientY < midY) {
+                        memoryItem.parentNode.insertBefore(dropIndicator, memoryItem);
+                    } else {
+                        memoryItem.parentNode.insertBefore(dropIndicator, memoryItem.nextSibling);
+                    }
+                });
+
+                // 放置
+                memoryItem.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    if (!draggedItem || draggedItem === memoryItem) return;
+
+                    // 插入到提示线的位置
+                    if (dropIndicator.parentNode) {
+                        dropIndicator.parentNode.insertBefore(draggedItem, dropIndicator);
+                        dropIndicator.remove();
+                    }
+                });
+            }
+
+            // 3. 保存当前排序到本地存储
+            function saveMemoryOrder() {
+                const timeline = document.getElementById('timeline');
+                const memoryItems = timeline.querySelectorAll('.timeline-item');
+                
+                // 提取所有回忆的数据
+                const orderedMemories = [];
+                memoryItems.forEach(item => {
+                    const date = item.querySelector('.timeline-date')?.textContent || '';
+                    const title = item.querySelector('.timeline-content h3')?.textContent || '';
+                    const content = item.querySelector('.timeline-content p')?.textContent || '';
+                    orderedMemories.push({ date, title, content });
+                });
+
+                // 更新本地存储
+                localStorage.setItem('juunMemories', JSON.stringify(orderedMemories));
+            }
+
+            // 4. 给所有已有的回忆添加拖拽功能
+            document.querySelectorAll('.timeline-item').forEach(makeMemoryDraggable);
+
+            // 5. 监听时间线变化，自动给新添加的回忆添加拖拽功能
+            const timeline = document.getElementById('timeline');
+            if (timeline) {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach((mutation) => {
+                        mutation.addedNodes.forEach((node) => {
+                            if (node.nodeType === 1 && node.classList.contains('timeline-item')) {
+                                // 延迟一点添加，确保元素完全渲染
+                                setTimeout(() => makeMemoryDraggable(node), 100);
+                            }
+                        });
+                    });
+                });
+
+                // 开始监听时间线的子节点变化
+                observer.observe(timeline, {
+                    childList: true,
+                    subtree: false
+                });
+            }
+        })();
+// ======================================
+// ✅ 一键暗黑模式切换（纯增量）
+// ======================================
+(function addDarkModeToggle() {
+    // 创建切换按钮
+    const darkBtn = document.createElement('button');
+    darkBtn.textContent = '🌙';
+    darkBtn.style.position = 'fixed';
+    darkBtn.style.bottom = '90px'; // 在返回顶部按钮上面
+    darkBtn.style.right = '20px';
+    darkBtn.style.width = '50px';
+    darkBtn.style.height = '50px';
+    darkBtn.style.borderRadius = '50%';
+    darkBtn.style.border = 'none';
+    darkBtn.style.backgroundColor = 'var(--primary)';
+    darkBtn.style.color = 'white';
+    darkBtn.style.fontSize = '20px';
+    darkBtn.style.cursor = 'pointer';
+    darkBtn.style.zIndex = '9999';
+    darkBtn.style.boxShadow = '0 4px 15px rgba(139, 92, 246, 0.4)';
+    darkBtn.style.transition = 'all 0.3s ease';
+    document.body.appendChild(darkBtn);
+
+    // 保存主题状态到本地存储
+    let isDarkMode = localStorage.getItem('juunDarkMode') === 'true';
+
+    // 应用主题
+    function applyTheme(isDark) {
+        if (isDark) {
+            document.documentElement.style.setProperty('--light', '#0a0a12');
+            document.documentElement.style.setProperty('--white', '#12121f');
+            document.documentElement.style.setProperty('--dark', '#f5f5f5');
+            document.documentElement.style.setProperty('--gray', '#a0a0b0');
+            document.body.style.backgroundColor = '#0a0a12';
+            document.body.style.color = '#f5f5f5';
+            darkBtn.textContent = '☀️';
+            // 添加黑暗模式卡片样式
+            document.querySelectorAll('.al-card, .letter-card').forEach(card => {
+                card.style.backgroundColor = 'rgba(18, 18, 31, 0.95)';
+                card.style.borderColor = 'rgba(167, 139, 250, 0.3)';
+            });
+        } else {
+            document.documentElement.style.setProperty('--light', '#F5F3FF');
+            document.documentElement.style.setProperty('--white', '#ffffff');
+            document.documentElement.style.setProperty('--dark', '#1E1B4B');
+            document.documentElement.style.setProperty('--gray', '#6b7280');
+            document.body.style.backgroundColor = '#F5F3FF';
+            document.body.style.color = '#333';
+            darkBtn.textContent = '🌙';
+            // 恢复浅色模式卡片样式
+            document.querySelectorAll('.al-card, .letter-card').forEach(card => {
+                card.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+                card.style.borderColor = 'rgba(155, 89, 182, 0.2)';
+            });
+        }
+        localStorage.setItem('juunDarkMode', isDark);
+    }
+
+    // 页面加载时应用保存的主题
+    applyTheme(isDarkMode);
+
+    // 点击切换
+    darkBtn.addEventListener('click', () => {
+        isDarkMode = !isDarkMode;
+        applyTheme(isDarkMode);
+    });
+})();
+// ======================================
+// ✅ 标题文字流动渐变效果（纯增量）
+// ======================================
+(function addGradientTextEffect() {
+    // 添加渐变动画样式
+    const gradientStyle = document.createElement('style');
+    gradientStyle.textContent = `
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--primary), var(--secondary));
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientFlow 4s ease infinite;
+        }
+        
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    `;
+    document.head.appendChild(gradientStyle);
+
+    // 给所有大标题添加渐变效果
+    document.querySelectorAll('h1, h2, .logo').forEach(title => {
+        title.classList.add('gradient-text');
+    });
+})();
+// ======================================
+// ✅ 绝对单例👾小怪兽（终极防多版）
+// ======================================
+(function addAbsoluteSingleMonster() {
+    // 全局唯一实例引用（终极单例保障）
+    let currentMonster = null;
+    let recreateTimer = null;
+
+    // 预设多种动画样式
+    const animateStyles = [
+        'bounce 0.8s ease-in-out infinite alternate',
+        'swing 1s ease-in-out infinite',
+        'rotate 3s linear infinite',
+        'breath 1.2s ease-in-out infinite alternate',
+        'shake 0.6s ease-in-out infinite'
+    ];
+
+    // 注入动画关键帧
+    const aniStyle = document.createElement('style');
+    aniStyle.textContent = `
+        @keyframes bounce { 0% { transform: translateY(0); } 100% { transform: translateY(-6px); } }
+        @keyframes swing { 0% { transform: rotate(-8deg); } 50% { transform: rotate(8deg); } 100% { transform: rotate(-8deg); } }
+        @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        @keyframes breath { 0% { transform: scale(1); } 100% { transform: scale(1.15); } }
+        @keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-3px); } 75% { transform: translateX(3px); } }
+    `;
+    document.head.appendChild(aniStyle);
+
+    // 强制清理所有可能存在的小怪兽
+    function forceCleanAllMonsters() {
+        // 清除所有待创建的定时器
+        if (recreateTimer) {
+            clearTimeout(recreateTimer);
+            recreateTimer = null;
+        }
+        
+        // 暴力移除页面上所有的👾元素
+        document.querySelectorAll('div').forEach(el => {
+            if (el.innerHTML === '👾' && el.style.position === 'fixed') {
+                el.remove();
+            }
+        });
+        
+        // 重置当前实例
+        currentMonster = null;
+    }
+
+    // 创建唯一小怪兽
+    function createSingleMonster() {
+        // 第一重校验：如果已有实例，直接返回
+        if (currentMonster) return;
+        
+        // 第二重校验：强制清理所有残留
+        forceCleanAllMonsters();
+
+        // 创建新实例
+        const monster = document.createElement('div');
+        monster.innerHTML = '👾';
+        monster.style.position = 'fixed';
+        monster.style.left = Math.random() * (window.innerWidth - 50) + 'px';
+        monster.style.top = Math.random() * (window.innerHeight - 50) + 'px';
+        monster.style.fontSize = '32px';
+        monster.style.cursor = 'pointer';
+        monster.style.zIndex = '99995';
+        monster.style.userSelect = 'none';
+        monster.style.opacity = '0';
+        monster.style.transition = 'opacity 0.5s ease, transform 0.2s ease';
+
+        // 随机分配基础动画
+        const randomAni = animateStyles[Math.floor(Math.random() * animateStyles.length)];
+        monster.style.animation = randomAni;
+
+        // 淡入显示
+        document.body.appendChild(monster);
+        setTimeout(() => monster.style.opacity = '0.8', 10);
+
+        // 保存全局唯一引用
+        currentMonster = monster;
+
+        // 自动移动
+        let speedX = (Math.random() - 0.5) * 2;
+        let speedY = (Math.random() - 0.5) * 2;
+        let moveInterval = setInterval(() => {
+            // 移动前再次校验实例是否存在
+            if (!currentMonster || currentMonster !== monster) {
+                clearInterval(moveInterval);
+                return;
+            }
+
+            let x = parseFloat(monster.style.left);
+            let y = parseFloat(monster.style.top);
+
+            if (x <= 0 || x >= window.innerWidth - 50) speedX *= -1;
+            if (y <= 0 || y >= window.innerHeight - 50) speedY *= -1;
+
+            monster.style.left = (x + speedX) + 'px';
+            monster.style.top = (y + speedY) + 'px';
+
+            // 随机小动作
+            if (Math.random() > 0.96) {
+                monster.style.transform = 'scale(1.4) rotate(10deg)';
+                setTimeout(() => {
+                    if (currentMonster === monster) monster.style.transform = '';
+                }, 250);
+            }
+        }, 50);
+
+        // 点击小怪兽：立即消失，然后在新位置重现
+        monster.addEventListener('click', (e) => {
+            e.stopPropagation();
+            // 防止重复点击
+            if (!currentMonster || currentMonster !== monster) return;
+            
+            // 点击时放大消失效果
+            monster.style.transform = 'scale(2.5)';
+            monster.style.opacity = '0';
+            clearInterval(moveInterval);
+
+            // 完全消失后再创建新的
+            setTimeout(() => {
+                forceCleanAllMonsters();
+                // 1-3秒后在新位置重现
+                recreateTimer = setTimeout(createSingleMonster, 1000 + Math.random() * 2000);
+            }, 500);
+        });
+
+        // 拖拽功能
+        let isDragging = false;
+        let offsetX, offsetY;
+
+        monster.addEventListener('mousedown', (e) => {
+            // 防止重复拖拽
+            if (!currentMonster || currentMonster !== monster) return;
+            
+            isDragging = true;
+            offsetX = e.clientX - parseFloat(monster.style.left);
+            offsetY = e.clientY - parseFloat(monster.style.top);
+            monster.style.zIndex = '99999';
+            monster.style.opacity = '1';
+            monster.style.transform = 'scale(1.3)';
+            monster.style.animation = 'none';
+            clearInterval(moveInterval);
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging || !currentMonster || currentMonster !== monster) return;
+            const newX = Math.max(0, Math.min(e.clientX - offsetX, window.innerWidth - 50));
+            const newY = Math.max(0, Math.min(e.clientY - offsetY, window.innerHeight - 50));
+            monster.style.left = newX + 'px';
+            monster.style.top = newY + 'px';
+        });
+
+        document.addEventListener('mouseup', () => {
+            if (!isDragging || !currentMonster || currentMonster !== monster) return;
+            isDragging = false;
+            
+            // 拖拽松手后：当前小怪兽消失，然后在新位置重现
+            monster.style.opacity = '0';
+            monster.style.transform = 'scale(0.5)';
+
+            setTimeout(() => {
+                forceCleanAllMonsters();
+                // 1-3秒后在新位置重现
+                recreateTimer = setTimeout(createSingleMonster, 1000 + Math.random() * 2000);
+            }, 500);
+        });
+
+        // 10-20秒自动消失，然后在新位置重现
+        const autoDisappearTimer = setTimeout(() => {
+            // 如果正在拖拽或实例已不存在，就不自动消失
+            if (isDragging || !currentMonster || currentMonster !== monster) return;
+            
+            monster.style.opacity = '0';
+            clearInterval(moveInterval);
+
+            setTimeout(() => {
+                forceCleanAllMonsters();
+                // 1-3秒后在新位置重现
+                recreateTimer = setTimeout(createSingleMonster, 1000 + Math.random() * 2000);
+            }, 500);
+        }, 10000 + Math.random() * 10000);
+    }
+
+    // 页面加载时先强制清理所有残留，再创建第一个
+    window.addEventListener('load', () => {
+        forceCleanAllMonsters();
+        setTimeout(createSingleMonster, 2000);
+    });
+
+    // 页面可见性变化时强制校验单例
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+            // 页面重新可见时，如果没有小怪兽就创建一个
+            if (!currentMonster) {
+                recreateTimer = setTimeout(createSingleMonster, 1000);
+            }
+        }
+    });
+})();
+// ======================================
+// ✅ 背景天使元素特效（纯增量）
+// ======================================
+(function addAngelBackgroundElements() {
+    // 创建背景容器
+    const bgContainer = document.createElement('div');
+    bgContainer.style.position = 'fixed';
+    bgContainer.style.top = '0';
+    bgContainer.style.left = '0';
+    bgContainer.style.width = '100vw';
+    bgContainer.style.height = '100vh';
+    bgContainer.style.pointerEvents = 'none';
+    bgContainer.style.zIndex = '-1';
+    bgContainer.style.overflow = 'hidden';
+    document.body.appendChild(bgContainer);
+
+    // 添加天使翅膀元素
+    function createAngelWing() {
+        const wing = document.createElement('div');
+        wing.innerHTML = '🪽';
+        wing.style.position = 'absolute';
+        wing.style.fontSize = Math.random() * 40 + 30 + 'px';
+        wing.style.opacity = '0.08';
+        wing.style.filter = 'blur(1px)';
+        wing.style.animation = `float ${Math.random() * 10 + 15}s ease-in-out infinite`;
+        
+        // 随机位置
+        wing.style.left = Math.random() * 100 + 'vw';
+        wing.style.top = Math.random() * 100 + 'vh';
+        
+        // 随机旋转
+        wing.style.transform = `rotate(${Math.random() * 360}deg)`;
+        
+        bgContainer.appendChild(wing);
+    }
+
+    // 添加星星元素
+    function createStar() {
+        const star = document.createElement('div');
+        star.innerHTML = '✨';
+        star.style.position = 'absolute';
+        star.style.fontSize = Math.random() * 15 + 10 + 'px';
+        star.style.opacity = '0.12';
+        star.style.animation = `twinkle ${Math.random() * 3 + 2}s ease-in-out infinite`;
+        
+        star.style.left = Math.random() * 100 + 'vw';
+        star.style.top = Math.random() * 100 + 'vh';
+        
+        bgContainer.appendChild(star);
+    }
+
+    // 添加光晕元素
+    function createGlow() {
+        const glow = document.createElement('div');
+        glow.style.position = 'absolute';
+        glow.style.width = Math.random() * 200 + 100 + 'px';
+        glow.style.height = Math.random() * 200 + 100 + 'px';
+        glow.style.borderRadius = '50%';
+        glow.style.background = 'radial-gradient(circle, rgba(124, 58, 237, 0.05) 0%, transparent 70%)';
+        glow.style.animation = `pulse ${Math.random() * 5 + 5}s ease-in-out infinite`;
+        
+        glow.style.left = Math.random() * 100 + 'vw';
+        glow.style.top = Math.random() * 100 + 'vh';
+        
+        bgContainer.appendChild(glow);
+    }
+
+    // 添加动画样式
+    const bgStyle = document.createElement('style');
+    bgStyle.textContent = `
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(5deg); }
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.12; transform: scale(1); }
+            50% { opacity: 0.25; transform: scale(1.2); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+    `;
+    document.head.appendChild(bgStyle);
+
+    // 生成元素
+    window.addEventListener('load', () => {
+        // 生成6个翅膀
+        for (let i = 0; i < 6; i++) {
+            setTimeout(createAngelWing, i * 300);
+        }
+        
+        // 生成12个星星
+        for (let i = 0; i < 12; i++) {
+            setTimeout(createStar, i * 200);
+        }
+        
+        // 生成4个光晕
+        for (let i = 0; i < 4; i++) {
+            setTimeout(createGlow, i * 400);
+        }
+    });
+})();
+// ======================================
+// ✅ Angel & JUUN 新罗马字体 + 高亮紫色特效（纯增量）
+// ======================================
+(function highlightAngelJUUNText() {
+    // 添加文字特效样式
+    const textStyle = document.createElement('style');
+    textStyle.textContent = `
+        /* 导航栏Logo文字 */
+        .logo-text span {
+            font-family: 'Times New Roman', Times, serif !important;
+            font-weight: bold !important;
+            background: linear-gradient(135deg, #4C1D95, #7C3AED, #4C1D95) !important;
+            background-size: 200% 100% !important;
+            -webkit-background-clip: text !important;
+            background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            letter-spacing: 1.5px !important;
+            text-shadow: 0 0 15px rgba(124, 58, 237, 0.6) !important;
+            animation: textGradient 3s ease infinite !important;
+        }
+        
+        /* 主页大标题 */
+        .hero-title span {
+            font-family: 'Times New Roman', Times, serif !important;
+            font-weight: bold !important;
+            background: linear-gradient(135deg, #4C1D95, #8B5CF6, #4C1D95) !important;
+            background-size: 200% 100% !important;
+            -webkit-background-clip: text !important;
+            background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            letter-spacing: 1.5px !important;
+            text-shadow: 0 0 20px rgba(124, 58, 237, 0.8) !important;
+            animation: textGradient 4s ease infinite !important;
+        }
+        
+        @keyframes textGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    `;
+    document.head.appendChild(textStyle);
+
+    // 自动给所有Angel和JUUN文字添加span标签
+    function wrapTextWithSpan(element) {
+        const walker = document.createTreeWalker(
+            element,
+            NodeFilter.SHOW_TEXT,
+            null,
+            false
+        );
+
+        const textNodes = [];
+        let node;
+        while (node = walker.nextNode()) {
+            textNodes.push(node);
+        }
+
+        textNodes.forEach(textNode => {
+            const text = textNode.textContent;
+            if (text.includes('Angel') || text.includes('JUUN')) {
+                const newText = text
+                    .replace(/Angel/g, '<span>Angel</span>')
+                    .replace(/JUUN/g, '<span>JUUN</span>');
+                
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = newText;
+                
+                while (tempDiv.firstChild) {
+                    textNode.parentNode.insertBefore(tempDiv.firstChild, textNode);
+                }
+                textNode.parentNode.removeChild(textNode);
+            }
+        });
+    }
+
+    // 页面加载完成后执行
+    window.addEventListener('load', () => {
+        wrapTextWithSpan(document.body);
+    });
+})();
+// ======================================
+// ✅ 增强版立体爱心Logo特效（纯增量）
+// ======================================
+(function addEnhanced3DHeartLogo() {
+    // 找到左上角的爱心元素
+    const heartLogo = document.querySelector('.logo-heart');
+    if (!heartLogo) return;
+
+    // 添加更强的立体爱心样式
+    const heartStyle = document.createElement('style');
+    heartStyle.textContent = `
+        .logo-heart {
+            display: inline-block;
+            font-size: 28px;
+            /* 增强的立体效果：多层阴影+渐变 */
+            background: linear-gradient(145deg, #7C3AED, #4C1D95);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 3px 6px rgba(109, 40, 217, 0.6)) 
+                    drop-shadow(0 1px 3px rgba(109, 40, 217, 0.4));
+            transition: all 0.3s ease;
+            cursor: pointer;
+            animation: gentleBeat 2s ease-in-out infinite;
+        }
+        
+        .logo-heart:hover {
+            transform: scale(1.25);
+            filter: drop-shadow(0 5px 10px rgba(109, 40, 217, 0.8)) 
+                    drop-shadow(0 2px 5px rgba(109, 40, 217, 0.5));
+        }
+        
+        @keyframes gentleBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        @keyframes heartPulse {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.4); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+    `;
+    document.head.appendChild(heartStyle);
+
+    // 点击爱心触发心跳动画
+    heartLogo.addEventListener('click', () => {
+        heartLogo.style.animation = 'heartPulse 0.6s ease';
+        setTimeout(() => {
+            heartLogo.style.animation = 'gentleBeat 2s ease-in-out infinite';
+        }, 600);
+    });
+})();
+// ======================================
+// ✅ 纯增量立体爱心Logo（不用删任何东西）
+// ======================================
+(function add3DHeartOnly() {
+    // 自动找到左上角的爱心
+    const heart = document.querySelector('.logo-heart');
+    if (!heart) return;
+
+    // 强制添加立体样式（优先级最高）
+    const style = document.createElement('style');
+    style.textContent = `
+        .logo-heart {
+            background: linear-gradient(145deg, #7C3AED, #4C1D95) !important;
+            -webkit-background-clip: text !important;
+            background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            filter: drop-shadow(0 3px 6px rgba(109, 40, 217, 0.6)) 
+                    drop-shadow(0 1px 3px rgba(109, 40, 217, 0.4)) !important;
+            animation: gentleHeartBeat 2s ease-in-out infinite !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .logo-heart:hover {
+            transform: scale(1.25) !important;
+            filter: drop-shadow(0 5px 10px rgba(109, 40, 217, 0.8)) !important;
+        }
+        
+        @keyframes gentleHeartBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // 点击爱心触发心跳动画
+    heart.addEventListener('click', () => {
+        heart.style.animation = 'none';
+        setTimeout(() => {
+            heart.style.animation = 'gentleHeartBeat 2s ease-in-out infinite';
+        }, 10);
+    });
+})();
+// ======================================
+// ✅ 纯增量：所有英文新罗马字体 + 标题深紫色
+// ======================================
+(function fixFontAndTitleColor() {
+    // 注入全局样式
+    const globalStyle = document.createElement('style');
+    globalStyle.textContent = `
+        /* 1. 强制所有英文文本使用新罗马字体 */
+        body, p, span, h1, h2, h3, a, button, div {
+            font-family: 'Times New Roman', Times, serif !important;
+        }
+        
+        /* 2. 主标题 "To My Dearest" 设为深紫色 */
+        .hero-title {
+            color: #4C1D95 !important; /* 深紫色 */
+            font-weight: bold !important;
+        }
+        
+        /* 3. 用户名 "JUUN" 保持近黑色，突出显示 */
+        .hero-username {
+            color: #1A202C !important; /* 近黑色 */
+            font-weight: 900 !important;
+        }
+        
+        /* 4. 其他普通文字保持深灰色，确保可读性 */
+        .hero-subtitle, .stats, .memories-text {
+            color: #2D3748 !important; /* 深灰色 */
+        }
+        
+        /* 5. 保留 "Angel" 和 "JUUN" 的高亮渐变效果 */
+        .juun-highlight {
+            background: linear-gradient(135deg, #4C1D95, #7C3AED, #4C1D95) !important;
+            background-size: 200% 100% !important;
+            -webkit-background-clip: text !important;
+            background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            letter-spacing: 1.5px !important;
+            text-shadow: 0 0 15px rgba(124, 58, 237, 0.6) !important;
+            animation: juunGradient 3s ease infinite !important;
+        }
+        
+        @keyframes juunGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    `;
+    document.head.appendChild(globalStyle);
+
+    // 自动高亮页面中的 "Angel" 和 "JUUN" 文字
+    function highlightText() {
+        const walker = document.createTreeWalker(
+            document.body,
+            NodeFilter.SHOW_TEXT,
+            null,
+            false
+        );
+
+        const textNodes = [];
+        let node;
+        while (node = walker.nextNode()) {
+            textNodes.push(node);
+        }
+
+        textNodes.forEach(textNode => {
+            const text = textNode.textContent;
+            if (text.includes('Angel') || text.includes('JUUN')) {
+                const newText = text
+                    .replace(/Angel/g, '<span class="juun-highlight">Angel</span>')
+                    .replace(/JUUN/g, '<span class="juun-highlight">JUUN</span>');
+                
+                const temp = document.createElement('div');
+                temp.innerHTML = newText;
+                
+                while (temp.firstChild) {
+                    textNode.parentNode.insertBefore(temp.firstChild, textNode);
+                }
+                textNode.parentNode.removeChild(textNode);
+            }
+        });
+    }
+
+// ======================================
+// 图片压缩工具函数
+// ======================================
+function compressImage(file, maxWidth, maxHeight, quality) {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        
+        reader.onload = function(e) {
+            const img = new Image();
+            img.onload = function() {
+                const canvas = document.createElement('canvas');
+                let width = img.width;
+                let height = img.height;
+                
+                // 计算压缩后的尺寸
+                if (width > height) {
+                    if (width > maxWidth) {
+                        height = Math.round((height * maxWidth) / width);
+                        width = maxWidth;
+                    }
+                } else {
+                    if (height > maxHeight) {
+                        width = Math.round((width * maxHeight) / height);
+                        height = maxHeight;
+                    }
+                }
+                
+                canvas.width = width;
+                canvas.height = height;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0, width, height);
+                
+                canvas.toBlob(
+                    (blob) => {
+                        const reader2 = new FileReader();
+                        reader2.onload = () => resolve(reader2.result);
+                        reader2.readAsDataURL(blob);
+                    },
+                    'image/jpeg',
+                    quality
+                );
+            };
+            img.onerror = () => reject(new Error('Failed to load image'));
+            img.src = e.target.result;
+        };
+        
+        reader.onerror = () => reject(new Error('Failed to read file'));
+        reader.readAsDataURL(file);
+    });
+}
+
+// ======================================
+// ✅ 回忆区功能（完整重写）
+// ======================================
+(function initMemorySection() {
+    // 防止重复初始化
+    if (window.memorySectionInitialized) return;
+    window.memorySectionInitialized = true;
+    
+    const STORAGE_KEY = 'juunMemories';
+    
+    // 1. 给添加回忆表单动态插入图片上传框
+    const form = document.getElementById('memory-form');
+    if (!form) {
+        console.error('Memory form not found');
+        return;
+    }
+
+    const imageGroup = document.createElement('div');
+    imageGroup.className = 'form-group';
+    imageGroup.innerHTML = `
+        <label for="memory-image">Image (optional)</label>
+        <div class="custom-file-upload">
+            <label for="memory-image" class="file-upload-btn">📁 Choose File</label>
+            <input type="file" id="memory-image" accept="image/*" style="display: none;">
+            <span id="file-name" class="file-name">No file chosen</span>
+            <button type="button" id="clear-file-btn" class="clear-file-btn" style="display: none;">✕ Clear</button>
+        </div>
+    `;
+    
+    const contentGroup = form.querySelector('#memory-content').parentNode;
+    contentGroup.after(imageGroup);
+
+    // 添加文件选择事件
+    const fileInput = document.getElementById('memory-image');
+    const fileNameSpan = document.getElementById('file-name');
+    const clearFileBtn = document.getElementById('clear-file-btn');
+    
+    fileInput.addEventListener('change', function(e) {
+        if (e.target.files.length > 0) {
+            fileNameSpan.textContent = e.target.files[0].name;
+            clearFileBtn.style.display = 'inline-block';
+        } else {
+            fileNameSpan.textContent = 'No file chosen';
+            clearFileBtn.style.display = 'none';
+        }
+    });
+    
+    // 添加清除按钮事件
+    clearFileBtn.addEventListener('click', function() {
+        fileInput.value = '';
+        fileNameSpan.textContent = 'No file chosen';
+        clearFileBtn.style.display = 'none';
+    });
+
+    // 2. 表单提交事件
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const date = document.getElementById('memory-date').value;
+        const title = document.getElementById('memory-title').value.trim();
+        const content = document.getElementById('memory-content').value.trim();
+        const imageInput = document.getElementById('memory-image');
+
+        // 验证必填字段
+        if (!date || !title || !content) {
+            alert('Please fill in all required fields (Date, Title, and Content)');
+            return;
+        }
+
+        const newMemory = { date, title, content, image: '' };
+
+        if (imageInput.files[0]) {
+            const maxSize = 5 * 1024 * 1024; // 增加到5MB
+            const file = imageInput.files[0];
+            
+            if (file.size > maxSize) {
+                alert('Image size exceeds 5MB. The system will try to compress it.');
+                try {
+                    // 尝试压缩图片
+                    const compressedData = await compressImage(file, 1200, 1200, 0.7);
+                    const compressedFile = new File([compressedData], file.name, { type: 'image/jpeg' });
+                    
+                    if (compressedFile.size > maxSize) {
+                        alert('Even after compression, the image is too large. Please choose a smaller image or compression limit reached.');
+                        return;
+                    }
+                    
+                    newMemory.image = compressedData;
+                    saveAndRenderMemory(newMemory);
+                    resetForm();
+                } catch (err) {
+                    console.error('Image compression failed:', err);
+                    alert('Failed to process image. Please choose a different image.');
+                }
+                return;
+            }
+            
+            try {
+                const reader = new FileReader();
+                reader.onload = async function() {
+                    let imageData = reader.result;
+                    
+                    // 即使文件小于限制，也尝试压缩以优化存储
+                    if (file.type.startsWith('image/')) {
+                        try {
+                            imageData = await compressImage(file, 1200, 1200, 0.8);
+                        } catch (err) {
+                            console.log('Compression skipped, using original:', err);
+                        }
+                    }
+                    
+                    newMemory.image = imageData;
+                    saveAndRenderMemory(newMemory);
+                    resetForm();
+                };
+                reader.onerror = function() {
+                    alert('Failed to read image file. Please try again.');
+                };
+                reader.readAsDataURL(imageInput.files[0]);
+            } catch (err) {
+                console.error('Error processing image:', err);
+                alert('Failed to process image. Please try again.');
+            }
+        } else {
+            saveAndRenderMemory(newMemory);
+            resetForm();
+        }
+    });
+
+    // 3. 重置表单
+    function resetForm() {
+        document.getElementById('memory-title').value = '';
+        document.getElementById('memory-content').value = '';
+        document.getElementById('memory-date').value = '';
+        fileInput.value = '';
+        fileNameSpan.textContent = 'No file chosen';
+        clearFileBtn.style.display = 'none';
+    }
+
+    // 4. 保存并渲染回忆
+    function saveAndRenderMemory(memory) {
+        try {
+            let savedMemories = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+            savedMemories.unshift(memory);
+            if (savedMemories.length > 50) {
+                savedMemories = savedMemories.slice(0, 50);
+            }
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(savedMemories));
+            console.log('Memory saved:', memory.title);
+            renderMemoryWithImage(memory);
+        } catch (e) {
+            console.error('Failed to save memory:', e);
+            alert('Failed to save memory. Please try again.');
+        }
+    }
+
+    // 5. 渲染回忆
+    window.renderMemoryWithImage = function(memory) {
+        const timeline = document.getElementById('timeline');
+        const memoryItem = document.createElement('div');
+        memoryItem.className = 'timeline-item fade-in';
+        
+        let imageHtml = '';
+        if (memory.image) {
+            imageHtml = `<img src="${memory.image}" alt="Memory image" class="memory-image" style="width:100%; max-height:300px; object-fit:cover; border-radius:8px; margin-top:1rem; cursor:pointer;">`;
+        }
+
+        memoryItem.innerHTML = `
+            <div class="timeline-date">${memory.date}</div>
+            <div class="timeline-content">
+                <h3>${memory.title}</h3>
+                <p>${memory.content}</p>
+                ${imageHtml}
+            </div>
+        `;
+        timeline.appendChild(memoryItem);
+
+        // 给图片添加点击放大功能
+        const img = memoryItem.querySelector('.memory-image');
+        if (img) {
+            img.addEventListener('click', () => {
+                const lightbox = document.getElementById('image-lightbox');
+                const lightboxImg = lightbox.querySelector('img');
+                lightboxImg.src = img.src;
+                lightbox.style.display = 'flex';
+                setTimeout(() => lightbox.style.opacity = '1', 10);
+                document.body.style.overflow = 'hidden';
+            });
+        }
+    };
+
+    // 6. 页面加载时渲染所有回忆
+    window.addEventListener('load', () => {
+        const timeline = document.getElementById('timeline');
+        timeline.innerHTML = '';
+        
+        let savedMemories = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+        
+        // 添加默认示例数据
+        if (savedMemories.length === 0) {
+            savedMemories = [
+                {
+                    date: '2026-06-11',
+                    title: 'Today I miss you',
+                    content: 'Thinking about you makes me happy. Every moment with you is precious.',
+                    image: ''
+                },
+                {
+                    date: '2026-06-10',
+                    title: 'Beautiful memory',
+                    content: 'Remember that day we spent together? It was the best day of my life.',
+                    image: ''
+                }
+            ];
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(savedMemories));
+            console.log('Default memories added');
+        }
+        
+        const validMemories = savedMemories.filter(m => m.title && m.content && m.date);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(validMemories));
+        validMemories.forEach(renderMemoryWithImage);
+        console.log('Memories loaded:', validMemories.length);
+    });
+
+    // 7. 添加样式
+    const style = document.createElement('style');
+    style.textContent = `
+        .memory-image {
+            transition: transform 0.3s ease;
+        }
+        .memory-image:hover {
+            transform: scale(1.02);
+        }
+    `;
+    document.head.appendChild(style);
+})();
+// ======================================
+// ✅ 鼠标点击紫色烟花特效（纯增量）
+// ======================================
+(function addPurpleFireworks() {
+    // 创建canvas
+    const canvas = document.createElement('canvas');
+    canvas.style.position = 'fixed';
+    canvas.style.top = '0';
+    canvas.style.left = '0';
+    canvas.style.width = '100vw';
+    canvas.style.height = '100vh';
+    canvas.style.pointerEvents = 'none';
+    canvas.style.zIndex = '99999';
+    document.body.appendChild(canvas);
+
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // 窗口大小变化时调整canvas
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+
+    // 粒子类
+    class Particle {
+        constructor(x, y) {
+            this.x = x;
+            this.y = y;
+            this.speed = Math.random() * 4 + 1;
+            this.angle = Math.random() * Math.PI * 2;
+            this.gravity = 0.05;
+            this.vx = Math.cos(this.angle) * this.speed;
+            this.vy = Math.sin(this.angle) * this.speed;
+            this.alpha = 1;
+            this.decay = Math.random() * 0.02 + 0.01;
+            this.size = Math.random() * 3 + 1;
+            // 紫色系颜色
+            this.color = `rgba(${Math.random()*50+100}, ${Math.random()*50}, ${Math.random()*100+150}, ${this.alpha})`;
+        }
+
+        update() {
+            this.vy += this.gravity;
+            this.x += this.vx;
+            this.y += this.vy;
+            this.alpha -= this.decay;
+            this.color = `rgba(${Math.random()*50+100}, ${Math.random()*50}, ${Math.random()*100+150}, ${this.alpha})`;
+        }
+
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = this.color;
+            ctx.fill();
+        }
+    }
+
+    const particles = [];
+
+    // 点击事件
+    document.addEventListener('click', (e) => {
+        // 生成30个粒子
+        for (let i = 0; i < 30; i++) {
+            particles.push(new Particle(e.clientX, e.clientY));
+        }
+    });
+
+    // 动画循环
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        for (let i = particles.length - 1; i >= 0; i--) {
+            particles[i].update();
+            particles[i].draw();
+            
+            if (particles[i].alpha <= 0) {
+                particles.splice(i, 1);
+            }
+        }
+        
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+})();
+    // 2. 补全回忆删除功能（带淡出动画 + localStorage同步）
+    (function initMemoryDelete() {
+        const timeline = document.querySelector('.timeline');
+        if (!timeline) return;
+
+        timeline.addEventListener('click', (e) => {
+            if (!e.target.classList.contains('delete-memory-btn')) return;
+            
+            const isEn = typeof currentLang !== 'undefined' && currentLang === 'en';
+            if (!confirm(isEn ? 'Delete this memory?' : '이 추억을 삭제할까요?')) return;
+
+            const item = e.target.closest('.timeline-item');
+            const date = item.querySelector('.timeline-date')?.textContent || '';
+            const title = item.querySelector('h3')?.textContent || '';
+
+            // 同步本地存储
+            try {
+                const saved = JSON.parse(localStorage.getItem('juunMemories') || '[]');
+                const idx = saved.findIndex(m => m.date === date && m.title === title);
+                if (idx > -1) {
+                    saved.splice(idx, 1);
+                    localStorage.setItem('juunMemories', JSON.stringify(saved));
+                }
+            } catch(err) { console.warn('Memory delete sync failed:', err); }
+
+            // 淡出后移除
+            item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(-20px)';
+            setTimeout(() => item.remove(), 300);
+        });
+    })();
+
+    // 3. 补全点击紫色粒子特效（Canvas）
+    (function initParticleEffect() {
+        const canvas = document.createElement('canvas');
+        canvas.id = 'particle-canvas';
+        canvas.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;';
+        document.body.appendChild(canvas);
+        const ctx = canvas.getContext('2d');
+
+        const resize = () => { canvas.width = innerWidth; canvas.height = innerHeight; };
+        resize();
+        window.addEventListener('resize', resize);
+
+        const particles = [];
+        class Particle {
+            constructor(x, y) {
+                this.x = x; this.y = y;
+                this.vx = (Math.random() - 0.5) * 8;
+                this.vy = (Math.random() - 0.5) * 8;
+                this.alpha = 1;
+                this.decay = Math.random() * 0.02 + 0.01;
+                this.size = Math.random() * 3 + 1;
+            }
+            update() {
+                this.x += this.vx; this.y += this.vy;
+                this.vy += 0.05; // gravity
+                this.alpha -= this.decay;
+            }
+            draw() {
+                ctx.globalAlpha = Math.max(0, this.alpha);
+                ctx.fillStyle = '#9b59b6';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        document.addEventListener('click', (e) => {
+            for (let i = 0; i < 25; i++) particles.push(new Particle(e.clientX, e.clientY));
+        });
+
+        (function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = particles.length - 1; i >= 0; i--) {
+                particles[i].update();
+                particles[i].draw();
+                if (particles[i].alpha <= 0) particles.splice(i, 1);
+            }
+            requestAnimationFrame(animate);
+        })();
+    })();
+// ==============================================
+// ✅ 纯增量：强制信件内容纯文字展示（不修改任何原有代码）
+// ==============================================
+(function forcePureTextLetters() {
+    // 等待页面完全加载，确保原有代码已经执行完毕
+    window.addEventListener('load', () => {
+        // 重新定义全局渲染函数，覆盖原有逻辑
+        window.renderLetters = function() {
+            const lang = getLang();
+            const txt = langData[lang];
+            const container = document.getElementById('letterContainer');
+            if (!container) return;
+            container.innerHTML = '';
+
+            const list = JSON.parse(localStorage.getItem('juunLetters')) || [];
+
+            // 无信件提示
+            if (list.length === 0) {
+                container.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:3rem;color:#777;">${txt.emptyTip}</div>`;
+                return;
+            }
+
+            // 纯文字渲染每一封信
+            list.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'letter-item';
+
+                // 日期（纯文字）
+                const date = document.createElement('div');
+                date.className = 'letter-date';
+                date.textContent = item.date;
+
+                // 标题（纯文字）
+                const title = document.createElement('h3');
+                title.className = 'letter-title';
+                title.textContent = item.title;
+
+                // 核心：内容纯文字渲染，不解析任何HTML
+                const content = document.createElement('div');
+                content.className = 'letter-text';
+                content.textContent = item.content; // ✅ 100%纯文字输出
+
+                // 删除按钮
+                const delBtn = document.createElement('button');
+                delBtn.className = 'del-letter';
+                delBtn.dataset.id = item.id;
+                delBtn.textContent = 'Delete';
+
+                // 组装卡片
+                card.append(date, title, content, delBtn);
+                container.appendChild(card);
+            });
+
+            // 重新绑定删除事件
+            document.querySelectorAll('.del-letter').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (confirm(langData[getLang()].delConfirm)) {
+                        const delId = Number(btn.dataset.id);
+                        const arr = JSON.parse(localStorage.getItem('juunLetters')) || [];
+                        const newArr = arr.filter(x => x.id !== delId);
+                        localStorage.setItem('juunLetters', JSON.stringify(newArr));
+                        renderLetters();
+                    }
+                });
+            });
+        };
+
+        // 立即执行一次，覆盖原来的渲染结果
+        renderLetters();
+
+        // 语言切换时也会自动使用新的渲染函数
+        console.log('✅ 信件内容已强制切换为纯文字展示');
+    });
+})();
+</script>
+</body>
+</html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信件专区测试</title>
+    <!-- 引入手写体字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 基础变量（模拟你项目中的紫色主题） */
+        :root { --primary: #9b59b6; }
+        body { font-family: sans-serif; background: #faf5ff; margin: 0; padding: 20px; }
+
+        /* === Memory表单样式 - 英文使用Times New Roman字体 === */
+        .add-memory, .add-memory h3, .add-memory label, 
+        .add-memory input, .add-memory textarea, .add-memory button {
+            font-family: 'Times New Roman', Times, serif !important;
+        }
+
+        /* === 信件专区样式 === */
+        #angel-letters { max-width: 1200px; margin: 0 auto; padding-top: 40px; }
+        .letters-title { text-align: center; color: var(--primary); font-size: 2rem; margin-bottom: 40px; font-family: 'Caveat', cursive; }
+        
+        .write-btn {
+            display: block; margin: 0 auto 40px; padding: 15px 40px;
+            background: var(--primary); color: #fff; border: none; border-radius: 30px;
+            font-size: 1.1rem; cursor: pointer; box-shadow: 0 4px 15px rgba(155,89,182,0.4);
+        }
+
+        #letters-container { display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; }
+        .letter-card {
+            background: rgba(255,255,255,0.9); border: 1px solid rgba(155,89,182,0.2);
+            border-radius: 15px; padding: 25px; position: relative;
+            width: calc(33.33% - 14px); min-width: 280px; max-width: 400px;
+        }
+        
+        /* 删除按钮 */
+        .del-letter-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 36px;
+            height: 36px;
+            border: none;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
+            z-index: 10;
+        }
+        
+        .letter-card:hover .del-letter-btn {
+            opacity: 1;
+        }
+        
+        .del-letter-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.6);
+        }
+        
+        /* 翻译按钮 */
+        .trans-letter-btn {
+            display: none !important;
+        }
+        
+        .letter-card-date { font-size: 0.8rem; color: #aaa; margin-bottom: 8px; }
+        .letter-card-title { font-family: 'Caveat', cursive; font-size: 1.5rem; color: var(--primary); margin-bottom: 10px; }
+        .letter-card-body { font-family: 'Caveat', cursive; font-size: 1.2rem; color: #4a3b5c; white-space: pre-wrap; }
+
+        /* === 弹窗样式（关键修复点） === */
+        .modal-overlay {
+            display: none; /* 默认隐藏 */
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5); z-index: 99999; /* 确保在最顶层 */
+            justify-content: center; align-items: center; backdrop-filter: blur(3px);
+        }
+        .modal-content {
+            background: #fffdf8; border-radius: 20px; padding: 30px;
+            width: 90%; max-width: 500px; position: relative;
+        }
+        .close-btn { position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; background: none; border: none; }
+        .letter-input, .letter-textarea {
+            width: 100%; padding: 12px; border: 1px solid #e0d4f5;
+            border-radius: 10px; margin-bottom: 15px; box-sizing: border-box; font-size: 16px;
+        }
+        .letter-textarea { height: 150px; resize: none; font-family: 'Caveat', cursive; }
+        .save-btn { width: 100%; padding: 12px; background: var(--primary); color: #fff; border: none; border-radius: 10px; font-size: 16px; cursor: pointer; }
+        
+        /* === 信纸样式 === */
+        .paper-pattern-1 {
+            background: linear-gradient(135deg, #fdf4ff 0%, #f5e8ff 100%);
+            border: 2px solid #d8b4fe;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(167, 139, 250, 0.25) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.2) 0%, transparent 50%);
+        }
+        
+        .paper-pattern-2 {
+            background: linear-gradient(180deg, #faf5ff 0%, #f3e8ff 100%);
+            border: 2px dashed #a78bfa;
+            background-image: 
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 30px,
+                    rgba(167, 139, 250, 0.25) 30px,
+                    rgba(167, 139, 250, 0.25) 31px
+                );
+        }
+        
+        .paper-pattern-3 {
+            background: linear-gradient(135deg, #fdf2ff 0%, #fae8ff 50%, #f5f0ff 100%);
+            border: 1px solid #e9d5ff;
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 70%),
+                url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='1.5' fill='%23a78bfa' fill-opacity='0.3'/%3E%3C/svg%3E");
+        }
+        
+        .paper-pattern-4 {
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+            border: 2px solid #c4b5fd;
+            border-radius: 20px;
+            background-image: 
+                linear-gradient(45deg, rgba(139, 92, 246, 0.08) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(139, 92, 246, 0.08) 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, rgba(139, 92, 246, 0.08) 75%),
+                linear-gradient(-45deg, transparent 75%, rgba(139, 92, 246, 0.08) 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+        
+        .paper-pattern-5 {
+            background: linear-gradient(180deg, #fdf4ff 0%, #fae8ff 100%);
+            border: 1px solid #ddd6fe;
+            background-image: 
+                radial-gradient(ellipse at 30% 20%, rgba(167, 139, 250, 0.3) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(139, 92, 246, 0.25) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(147, 51, 234, 0.15) 0%, transparent 70%);
+        }
+        
+        .paper-pattern-6 {
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede9fe 100%);
+            border: 1px solid #c4b5fd;
+            background-image: 
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 20px,
+                    rgba(167, 139, 250, 0.15) 20px,
+                    rgba(167, 139, 250, 0.15) 21px
+                ),
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 20px,
+                    rgba(167, 139, 250, 0.15) 20px,
+                    rgba(167, 139, 250, 0.15) 21px
+                );
+        }
+        
+        .paper-pattern-7 {
+            background: linear-gradient(180deg, #fdf2ff 0%, #fae8ff 50%, #f5f0ff 100%);
+            border: 2px solid #a78bfa;
+            background-image: 
+                url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 25 Q25 20 20 15 Q15 20 20 25' fill='none' stroke='%23a78bfa' stroke-width='1' stroke-opacity='0.4'/%3E%3C/svg%3E");
+        }
+        
+        .paper-pattern-8 {
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+            border: 1px dashed #c4b5fd;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(139, 92, 246, 0.25) 0%, transparent 30%),
+                radial-gradient(circle at 75% 75%, rgba(167, 139, 250, 0.2) 0%, transparent 30%),
+                radial-gradient(circle at 50% 50%, rgba(147, 51, 234, 0.15) 0%, transparent 40%);
+        }
+        
+        .paper-pattern-9 {
+            background: linear-gradient(180deg, #fdf4ff 0%, #f5e8ff 100%);
+            border: 1px solid #ddd6fe;
+            background-image: 
+                repeating-linear-gradient(
+                    45deg,
+                    rgba(167, 139, 250, 0.08) 0px,
+                    rgba(167, 139, 250, 0.08) 1px,
+                    transparent 1px,
+                    transparent 10px
+                );
+        }
+        
+        .paper-pattern-10 {
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede9fe 50%, #faf5ff 100%);
+            border: 2px solid #d8b4fe;
+            background-image: 
+                url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='2' fill='%23c4b5fd' fill-opacity='0.35'/%3E%3C/svg%3E");
+        }
+        
+        /* 信纸选择器样式 */
+        .paper-picker {
+            margin-bottom: 15px;
+        }
+        .paper-picker label {
+            display: block; margin-bottom: 8px; color: var(--primary); font-size: 14px;
+        }
+        .paper-options {
+            display: flex; gap: 10px; flex-wrap: wrap;
+        }
+        .paper-option {
+            width: 50px; height: 50px; border-radius: 8px; cursor: pointer;
+            border: 3px solid transparent; transition: all 0.3s ease;
+        }
+        .paper-option:hover {
+            transform: scale(1.1);
+        }
+        .paper-option.selected {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <script>
+    // ==============================================
+// ✅ 纯增量：中英韩优雅字体（英文新罗马+中韩思源宋体）
+// ==============================================
+(function addElegantSerifFonts() {
+    // 1. 引入Google Fonts思源宋体（中文+韩文）
+    const fontLink = document.createElement('link');
+    fontLink.rel = 'preconnect';
+    fontLink.href = 'https://fonts.googleapis.com';
+    document.head.appendChild(fontLink);
+
+    const fontLink2 = document.createElement('link');
+    fontLink2.rel = 'preconnect';
+    fontLink2.href = 'https://fonts.gstatic.com';
+    fontLink2.crossOrigin = 'anonymous';
+    document.head.appendChild(fontLink2);
+
+    const fontLink3 = document.createElement('link');
+    fontLink3.href = 'https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700&family=Noto+Serif+SC:wght@400;500;700&display=swap';
+    fontLink3.rel = 'stylesheet';
+    document.head.appendChild(fontLink3);
+
+    // 2. 全局字体样式（自动适配语言）
+    const fontStyle = document.createElement('style');
+    fontStyle.textContent = `
+        /* 全局字体优先级：英文新罗马 → 韩文思源宋体 → 中文思源宋体 */
+        body, p, span, h1, h2, h3, h4, a, button, div, input, textarea {
+            font-family: 'Times New Roman', 'Noto Serif KR', 'Noto Serif SC', serif !important;
+            letter-spacing: 0.3px !important;
+        }
+
+        /* 信件内容专属优化（和截图风格一致） */
+        .letter-text {
+            font-family: 'Times New Roman', 'Noto Serif KR', 'Noto Serif SC', serif !important;
+            line-height: 1.9 !important;
+            color: #2D3748 !important;
+            font-size: 1.05rem !important;
+            font-weight: 400 !important;
+        }
+
+        /* 信件标题优化 */
+        .letter-title {
+            font-family: 'Times New Roman', 'Noto Serif KR', 'Noto Serif SC', serif !important;
+            font-weight: 600 !important;
+            color: #5B21B6 !important;
+        }
+
+        /* 日期文字优化 */
+        .letter-date {
+            font-family: 'Times New Roman', 'Noto Serif KR', 'Noto Serif SC', serif !important;
+            font-weight: 500 !important;
+        }
+
+        /* 优雅删除键（保留双语） */
+        .del-letter {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            padding: 4px 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #FEF2F2;
+            color: #DC2626;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            font-family: 'Times New Roman', 'Noto Serif KR', 'Noto Serif SC', serif !important;
+        }
+
+        .del-letter:hover {
+            background-color: #FEE2E2;
+            transform: scale(1.05);
+        }
+    `;
+    document.head.appendChild(fontStyle);
+
+    // 等待字体加载完成后重新渲染信件
+    window.addEventListener('load', () => {
+        // 扩展双语文本
+        if (typeof langData !== 'undefined') {
+            langData.en.deleteBtn = 'Delete';
+            langData.ko.deleteBtn = '삭제';
+        }
+
+        // 重新定义渲染函数（覆盖原有逻辑）
+        window.renderLetters = function() {
+            const lang = getLang();
+            const txt = langData[lang];
+            const container = document.getElementById('letterContainer');
+            if (!container) return;
+            container.innerHTML = '';
+
+            const list = JSON.parse(localStorage.getItem('juunLetters')) || [];
+
+            if (list.length === 0) {
+                container.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:3rem;color:#718096;font-family:'Times New Roman','Noto Serif KR','Noto Serif SC',serif;">${txt.emptyTip}</div>`;
+                return;
+            }
+
+            list.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'letter-item';
+
+                const date = document.createElement('div');
+                date.className = 'letter-date';
+                date.textContent = item.date;
+
+                const title = document.createElement('h3');
+                title.className = 'letter-title';
+                title.textContent = item.title;
+
+                const content = document.createElement('div');
+                content.className = 'letter-text';
+                content.textContent = item.content;
+
+                const delBtn = document.createElement('button');
+                delBtn.className = 'del-letter';
+                delBtn.dataset.id = item.id;
+                delBtn.textContent = txt.deleteBtn;
+
+                card.append(date, title, content, delBtn);
+                container.appendChild(card);
+            });
+
+            // 绑定删除事件
+            document.querySelectorAll('.del-letter').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (confirm(langData[getLang()].delConfirm)) {
+                        const delId = Number(btn.dataset.id);
+                        const arr = JSON.parse(localStorage.getItem('juunLetters')) || [];
+                        const newArr = arr.filter(x => x.id !== delId);
+                        localStorage.setItem('juunLetters', JSON.stringify(newArr));
+                        renderLetters();
+                    }
+                });
+            });
+        };
+
+        // 字体加载完成后执行渲染
+        document.fonts.ready.then(() => {
+            renderLetters();
+            console.log('✅ 已应用思源宋体中英韩优雅字体');
+        });
+    });
+})();
+// ==============================================
+// ✅ 终极完整信件功能包
+// 包含：紫色信纸+收藏置顶+搜索+模板切换+导出+字数统计+加密+翻译
+// ==============================================
+(function ultimateLetterFeatures() {
+    // --- 1. 全局样式（全紫色系） ---
+    const globalStyle = document.createElement('style');
+    globalStyle.textContent = `
+        /* 5种紫色系信纸模板 */
+        .template-1 {
+            background: linear-gradient(180deg, #FAF5FF 0%, #F5F3FF 100%) !important;
+            border: 1px solid #E9D5FF !important;
+            background-image: repeating-linear-gradient(transparent, transparent 31px, #E9D5FF 31px, #E9D5FF 32px);
+            background-size: 100% 32px;
+            background-position: 0 2rem;
+        }
+        .template-2 {
+            background: linear-gradient(180deg, #F5F3FF 0%, #EDE9FE 100%) !important;
+            border: 1px solid #DDD6FE !important;
+            background-image: repeating-linear-gradient(transparent, transparent 31px, #DDD6FE 31px, #DDD6FE 32px);
+            background-size: 100% 32px;
+            background-position: 0 2rem;
+        }
+        .template-3 {
+            background: linear-gradient(180deg, #EDE9FE 0%, #DDD6FE 100%) !important;
+            border: 1px solid #C4B5FD !important;
+            background-image: repeating-linear-gradient(transparent, transparent 31px, #C4B5FD 31px, #C4B5FD 32px);
+            background-size: 100% 32px;
+            background-position: 0 2rem;
+        }
+        .template-4 {
+            background: linear-gradient(135deg, #FAF5FF 0%, #F5F3FF 50%, #EDE9FE 100%) !important;
+            border: 1px solid #E9D5FF !important;
+            background-image: repeating-linear-gradient(transparent, transparent 31px, #E9D5FF 31px, #E9D5FF 32px);
+            background-size: 100% 32px;
+            background-position: 0 2rem;
+        }
+        .template-5 {
+            background: linear-gradient(180deg, #FFFFFF 0%, #FAF5FF 100%) !important;
+            border: 1px solid #F3E8FF !important;
+            background-image: repeating-linear-gradient(transparent, transparent 31px, #F3E8FF 31px, #F3E8FF 32px);
+            background-size: 100% 32px;
+            background-position: 0 2rem;
+        }
+
+        /* 通用信件卡片样式 */
+        .letter-item {
+            border-radius: 16px !important;
+            padding: 2rem !important;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.1) !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .letter-item:hover {
+            transform: translateY(-5px) !important;
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.15) !important;
+        }
+
+        /* 信纸顶部装饰线 */
+        .letter-item::before {
+            content: '';
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            right: 1.5rem;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #8B5CF6, transparent);
+        }
+
+        /* 信件内容 */
+        .letter-text {
+            font-family: 'Times New Roman', 'Noto Serif KR', 'Noto Serif SC', serif !important;
+            line-height: 32px !important;
+            color: #2D3748 !important;
+            font-size: 1.05rem !important;
+            margin-top: 0.5rem !important;
+            padding-top: 0 !important;
+            white-space: pre-wrap !important;
+        }
+
+        /* 信件标题 */
+        .letter-title {
+            font-family: 'Times New Roman', 'Noto Serif KR', 'Noto Serif SC', serif !important;
+            font-weight: 600 !important;
+            color: #5B21B6 !important;
+            margin-bottom: 1rem !important;
+            padding-bottom: 0.5rem !important;
+            border-bottom: 1px dashed #C4B5FD !important;
+        }
+
+        /* 日期 */
+        .letter-date {
+            font-family: 'Times New Roman', 'Noto Serif KR', 'Noto Serif SC', serif !important;
+            font-weight: 500 !important;
+            color: #7C3AED !important;
+            margin-bottom: 0.5rem !important;
+        }
+
+        /* 所有按钮统一紫色系 */
+        .letter-btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            font-family: 'Times New Roman', 'Noto Serif KR', 'Noto Serif SC', serif !important;
+            z-index: 10;
+        }
+
+        .letter-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* 收藏按钮 */
+        .favorite-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: #FEF3C7 !important;
+            color: #D97706 !important;
+        }
+
+        .favorite-btn.active {
+            background-color: #FDE68A !important;
+            color: #B45309 !important;
+        }
+
+        /* 翻译按钮 */
+        .translate-btn {
+            position: absolute;
+            top: 1rem;
+            right: 4.5rem;
+            background-color: #EDE9FE !important;
+            color: #7C3AED !important;
+        }
+
+        /* 导出按钮 */
+        .export-btn {
+            position: absolute;
+            top: 1rem;
+            right: 8rem;
+            background-color: #ECFDF5 !important;
+            color: #059669 !important;
+        }
+
+        /* 加密按钮 */
+        .encrypt-btn {
+            position: absolute;
+            top: 1rem;
+            right: 11.5rem;
+            background-color: #DBEAFE !important;
+            color: #2563EB !important;
+        }
+
+        /* 删除按钮（紫色系） */
+        .del-letter {
+            position: absolute;
+            top: 1rem;
+            right: 15rem;
+            background-color: #F3E8FF !important;
+            color: #9333EA !important;
+        }
+
+        /* 搜索栏 */
+        .letter-search {
+            max-width: 500px;
+            margin: 0 auto 2rem;
+            position: relative;
+        }
+
+        .letter-search input {
+            width: 100%;
+            padding: 0.8rem 1rem 0.8rem 3rem;
+            border: 1px solid #E9D5FF;
+            border-radius: 12px;
+            font-family: 'Times New Roman', 'Noto Serif KR', 'Noto Serif SC', serif !important;
+            font-size: 1rem;
+            background-color: #FAF5FF;
+        }
+
+        .letter-search::before {
+            content: '🔍';
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+        }
+
+        /* 模板切换 */
+        .template-switch {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .template-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .template-btn.active {
+            border-color: #7C3AED;
+            transform: scale(1.1);
+        }
+
+        /* 字数统计 */
+        .word-count {
+            text-align: right;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            font-family: 'Times New Roman', 'Noto Serif KR', 'Noto Serif SC', serif !important;
+        }
+
+        /* 密码弹窗 */
+        #password-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 100001;
+        }
+
+        .password-box {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+    `;
+    document.head.appendChild(globalStyle);
+
+    // --- 2. 扩展双语文本 ---
+    const i18n = {
+        en: {
+            searchPlaceholder: "Search letters...",
+            templateLabel: "Letter Template:",
+            wordCount: "words",
+            exportSingle: "Export",
+            exportAll: "Export All Letters",
+            setPassword: "Set Password",
+            enterPassword: "Enter Password",
+            wrongPassword: "Wrong password!",
+            deleteBtn: "Delete",
+            translateBtn: "Translate",
+            originalBtn: "Original",
+            favoriteBtn: "⭐",
+            unfavoriteBtn: "☆"
+        },
+        ko: {
+            searchPlaceholder: "편지 검색...",
+            templateLabel: "편지 템플릿:",
+            wordCount: "글자",
+            exportSingle: "내보내기",
+            exportAll: "모든 편지 내보내기",
+            setPassword: "비밀번호 설정",
+            enterPassword: "비밀번호 입력",
+            wrongPassword: "비밀번호가 틀렸습니다!",
+            deleteBtn: "삭제",
+            translateBtn: "번역",
+            originalBtn: "원문",
+            favoriteBtn: "⭐",
+            unfavoriteBtn: "☆"
+        }
+    };
+
+    // 获取当前语言
+    function getLang() {
+        const activeBtn = document.querySelector(".lang-btn.active");
+        return (activeBtn && activeBtn.textContent.trim() === "한국어") ? "ko" : "en";
+    }
+
+    // --- 3. 纯前端翻译功能（修复版） ---
+    async function translateText(text, from, to) {
+        try {
+            const response = await fetch(
+                `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${from}|${to}`
+            );
+            const data = await response.json();
+            const translatedText = data.responseData?.translatedText || text;
+            
+            // 处理可能的 HTML 编码
+            const textarea = document.createElement('textarea');
+            textarea.innerHTML = translatedText;
+            return textarea.value || translatedText;
+        } catch (error) {
+            console.log('翻译服务暂时不可用，使用原文本');
+            return text;
+        }
+    }
+
+    // --- 4. 导出功能 ---
+    function exportLetter(letter) {
+        const content = `Date: ${letter.date}\nTitle: ${letter.title}\n\n${letter.content}`;
+        const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `Letter_${letter.date}_${letter.title}.txt`;
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+
+    function exportAllLetters() {
+        const list = JSON.parse(localStorage.getItem('juunLetters')) || [];
+        let content = '';
+        list.forEach((letter, index) => {
+            content += `=== Letter ${index + 1} ===\nDate: ${letter.date}\nTitle: ${letter.title}\n\n${letter.content}\n\n\n`;
+        });
+        const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `All_Letters_${new Date().toISOString().split('T')[0]}.txt`;
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+
+    // --- 5. 密码弹窗 ---
+    function showPasswordModal(callback) {
+        const modal = document.createElement('div');
+        modal.id = 'password-modal';
+        modal.innerHTML = `
+            <div class="password-box">
+                <h3 style="color:#7C3AED;margin-bottom:1rem;">${i18n[getLang()].enterPassword}</h3>
+                <input type="password" id="password-input" style="width:100%;padding:0.8rem;border:1px solid #E9D5FF;border-radius:8px;margin-bottom:1rem;">
+                <button id="confirm-password" class="btn btn-primary" style="width:100%;">Confirm</button>
+            </div>
+        `;
+        document.body.appendChild(modal);
+        modal.style.display = 'flex';
+
+        document.getElementById('confirm-password').addEventListener('click', () => {
+            const password = document.getElementById('password-input').value;
+            modal.remove();
+            callback(password);
+        });
+    }
+
+    // --- 6. 初始化信件专区 ---
+    function initLettersSection() {
+        const lang = getLang();
+        const txt = i18n[lang];
+        const lettersSec = document.getElementById('letters');
+
+        // 添加搜索栏
+        if (!lettersSec.querySelector('.letter-search')) {
+            const searchDiv = document.createElement('div');
+            searchDiv.className = 'letter-search';
+            searchDiv.innerHTML = `<input type="text" placeholder="${txt.searchPlaceholder}" id="letter-search-input">`;
+            lettersSec.insertBefore(searchDiv, lettersSec.querySelector('.letter-wrap'));
+
+            // 搜索功能
+            document.getElementById('letter-search-input').addEventListener('input', (e) => {
+                const keyword = e.target.value.toLowerCase();
+                const cards = document.querySelectorAll('.letter-item');
+                cards.forEach(card => {
+                    const title = card.querySelector('.letter-title').textContent.toLowerCase();
+                    const content = card.querySelector('.letter-text').textContent.toLowerCase();
+                    if (title.includes(keyword) || content.includes(keyword)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        // 添加模板切换
+        if (!lettersSec.querySelector('.template-switch')) {
+            const templateDiv = document.createElement('div');
+            templateDiv.className = 'template-switch';
+            templateDiv.innerHTML = `
+                <span style="margin-right:1rem;line-height:30px;">${txt.templateLabel}</span>
+                <button class="template-btn active" data-template="1" style="background:linear-gradient(180deg, #FAF5FF, #F5F3FF);"></button>
+                <button class="template-btn" data-template="2" style="background:linear-gradient(180deg, #F5F3FF, #EDE9FE);"></button>
+                <button class="template-btn" data-template="3" style="background:linear-gradient(180deg, #EDE9FE, #DDD6FE);"></button>
+                <button class="template-btn" data-template="4" style="background:linear-gradient(135deg, #FAF5FF, #F5F3FF, #EDE9FE);"></button>
+                <button class="template-btn" data-template="5" style="background:linear-gradient(180deg, #FFFFFF, #FAF5FF);"></button>
+            `;
+            lettersSec.insertBefore(templateDiv, lettersSec.querySelector('.letter-wrap'));
+
+            // 模板切换功能
+            document.querySelectorAll('.template-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.template-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const template = btn.dataset.template;
+                    localStorage.setItem('juunLetterTemplate', template);
+                    document.querySelectorAll('.letter-item').forEach(card => {
+                        card.className = `letter-item template-${template}`;
+                    });
+                });
+            });
+        }
+
+        // 添加导出全部按钮
+        if (!lettersSec.querySelector('#export-all-btn')) {
+            const exportAllBtn = document.createElement('button');
+            exportAllBtn.id = 'export-all-btn';
+            exportAllBtn.className = 'btn btn-secondary';
+            exportAllBtn.style.display = 'block';
+            exportAllBtn.style.margin = '0 auto 2rem';
+            exportAllBtn.textContent = txt.exportAll;
+            lettersSec.insertBefore(exportAllBtn, lettersSec.querySelector('.letter-wrap'));
+            exportAllBtn.addEventListener('click', exportAllLetters);
+        }
+    }
+
+    // --- 7. 写信字数统计 ---
+    function enableWordCount() {
+        const form = document.getElementById('letterForm');
+        if (!form || form.querySelector('.word-count')) return;
+
+        const wordCountDiv = document.createElement('div');
+        wordCountDiv.className = 'word-count';
+        wordCountDiv.textContent = `0 ${i18n[getLang()].wordCount}`;
+        form.appendChild(wordCountDiv);
+
+        form.querySelector('#letContent').addEventListener('input', (e) => {
+            const count = e.target.value.length;
+            wordCountDiv.textContent = `${count} ${i18n[getLang()].wordCount}`;
+        });
+    }
+
+    // --- 8. 核心渲染函数 ---
+    window.renderLetters = function() {
+        const lang = getLang();
+        const txt = i18n[lang];
+        const container = document.getElementById('letterContainer');
+        if (!container) return;
+        container.innerHTML = '';
+
+        let list = JSON.parse(localStorage.getItem('juunLetters')) || [];
+        const currentTemplate = localStorage.getItem('juunLetterTemplate') || '1';
+
+        // 收藏置顶
+        list.sort((a, b) => (b.isFavorite || 0) - (a.isFavorite || 0));
+
+        if (list.length === 0) {
+            container.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:3rem;color:#718096;">No letters yet.</div>`;
+            return;
+        }
+
+        list.forEach(item => {
+            const card = document.createElement('div');
+            card.className = `letter-item template-${currentTemplate}`;
+
+            // 日期
+            const date = document.createElement('div');
+            date.className = 'letter-date';
+            date.textContent = item.date;
+
+            // 标题
+            const title = document.createElement('h3');
+            title.className = 'letter-title';
+            title.textContent = item.title;
+
+            // 内容
+            const content = document.createElement('div');
+            content.className = 'letter-text';
+            content.dataset.original = item.content;
+
+            // 加密处理
+            if (item.isEncrypted) {
+                content.textContent = '🔒 This letter is encrypted. Click to view.';
+                card.addEventListener('click', () => {
+                    showPasswordModal((password) => {
+                        if (password === item.password) {
+                            content.textContent = item.content;
+                        } else {
+                            alert(txt.wrongPassword);
+                        }
+                    });
+                });
+            } else {
+                content.textContent = item.content;
+            }
+
+            // 收藏按钮
+            const favoriteBtn = document.createElement('button');
+            favoriteBtn.className = `letter-btn favorite-btn ${item.isFavorite ? 'active' : ''}`;
+            favoriteBtn.textContent = item.isFavorite ? txt.favoriteBtn : txt.unfavoriteBtn;
+            favoriteBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                item.isFavorite = !item.isFavorite;
+                localStorage.setItem('juunLetters', JSON.stringify(list));
+                renderLetters();
+            });
+
+            // 翻译按钮
+            const translateBtn = document.createElement('button');
+            translateBtn.className = 'letter-btn translate-btn';
+            translateBtn.textContent = txt.translateBtn;
+            translateBtn.addEventListener('click', async (e) => {
+                e.stopPropagation();
+                if (item.isEncrypted) return;
+                
+                if (translateBtn.textContent === txt.translateBtn) {
+                    const translated = await translateText(content.dataset.original, 'zh-CN', 'ko');
+                    content.textContent = translated;
+                    translateBtn.textContent = txt.originalBtn;
+                } else {
+                    content.textContent = content.dataset.original;
+                    translateBtn.textContent = txt.translateBtn;
+                }
+            });
+
+            // 导出按钮
+            const exportBtn = document.createElement('button');
+            exportBtn.className = 'letter-btn export-btn';
+            exportBtn.textContent = txt.exportSingle;
+            exportBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                exportLetter(item);
+            });
+
+            // 加密按钮
+            const encryptBtn = document.createElement('button');
+            encryptBtn.className = 'letter-btn encrypt-btn';
+            encryptBtn.textContent = '🔒';
+            encryptBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (item.isEncrypted) {
+                    if (confirm('Remove encryption?')) {
+                        item.isEncrypted = false;
+                        delete item.password;
+                        localStorage.setItem('juunLetters', JSON.stringify(list));
+                        renderLetters();
+                    }
+                } else {
+                    showPasswordModal((password) => {
+                        if (password) {
+                            item.isEncrypted = true;
+                            item.password = password;
+                            localStorage.setItem('juunLetters', JSON.stringify(list));
+                            renderLetters();
+                        }
+                    });
+                }
+            });
+
+            // 删除按钮
+            const delBtn = document.createElement('button');
+            delBtn.className = 'letter-btn del-letter';
+            delBtn.textContent = txt.deleteBtn;
+            delBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (confirm('Delete this letter?')) {
+                    const newList = list.filter(x => x.id !== item.id);
+                    localStorage.setItem('juunLetters', JSON.stringify(newList));
+                    renderLetters();
+                }
+            });
+
+            // 组装卡片
+            card.append(date, title, content, favoriteBtn, translateBtn, exportBtn, encryptBtn, delBtn);
+            container.appendChild(card);
+        });
+    };
+
+    // --- 9. 初始化 ---
+    window.addEventListener('load', () => {
+        // 扩展原有langData
+        if (typeof langData !== 'undefined') {
+            Object.assign(langData.en, i18n.en);
+            Object.assign(langData.ko, i18n.ko);
+        }
+
+        // 初始化所有功能
+        initLettersSection();
+        enableWordCount();
+        renderLetters();
+
+        // 语言切换更新
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                setTimeout(() => {
+                    initLettersSection();
+                    renderLetters();
+                }, 100);
+            });
+        });
+
+        console.log('✅ 终极完整信件功能包已加载');
+    });
+})();
+</script>
+
+<!-- === 图片查看器模态框 === -->
+<div id="image-viewer-modal" class="image-viewer-overlay" style="display: none;">
+    <button class="image-viewer-close" onclick="closeImageViewer()">×</button>
+    <div class="image-viewer-content">
+        <img id="viewer-image" src="" alt="Preview">
+        <div class="image-viewer-caption"></div>
+    </div>
+    <div class="image-viewer-nav image-viewer-prev" onclick="navigateImage(-1)">‹</div>
+    <div class="image-viewer-nav image-viewer-next" onclick="navigateImage(1)">›</div>
+</div>
+
+<!-- === 可编辑内容功能脚本 === -->
+<script>
+// 存储所有可点击的图片
+let allImages = [];
+let currentImageIndex = 0;
+
+// 图片替换功能
+window.changeImage = function(imgElement) {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
+    input.onchange = function(e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                imgElement.src = event.target.result;
+                const key = imgElement.getAttribute('data-editable') || 'image_' + Date.now();
+                imgElement.setAttribute('data-editable', key);
+                localStorage.setItem('editable_' + key, event.target.result);
+                updateImagesArray();
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+    input.click();
+};
+
+// 图片替换功能（从占位符替换）
+window.changeImageFromPlaceholder = function(placeholder) {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
+    input.onchange = function(e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                // 将占位符替换为图片
+                const img = document.createElement('img');
+                img.src = event.target.result;
+                img.alt = 'Uploaded image';
+                img.style.cursor = 'zoom-in';
+                img.title = 'Click to view | Ctrl+Click to replace';
+                img.setAttribute('data-editable', 'image_' + Date.now());
+                
+                // 添加点击事件
+                img.addEventListener('click', function(e) {
+                    if (e.ctrlKey || e.metaKey) {
+                        changeImage(this);
+                    } else {
+                        openImageViewer(this);
+                    }
+                });
+                
+                placeholder.parentNode.replaceChild(img, placeholder);
+                localStorage.setItem('editable_' + img.getAttribute('data-editable'), event.target.result);
+                updateImagesArray();
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+    input.click();
+};
+
+// 为Moments和Collection初始化localStorage键
+const MOMENTS_STORAGE_KEY = 'added_moments_cards';
+const COLLECTION_STORAGE_KEY = 'added_collection_cards';
+
+// 保存Moments卡片到localStorage
+function saveMomentCard(cardData) {
+    let moments = JSON.parse(localStorage.getItem(MOMENTS_STORAGE_KEY) || '[]');
+    moments.push({...cardData, id: Date.now()});
+    localStorage.setItem(MOMENTS_STORAGE_KEY, JSON.stringify(moments));
+}
+
+// 保存Collection卡片到localStorage
+function saveCollectionCard(cardData) {
+    let collections = JSON.parse(localStorage.getItem(COLLECTION_STORAGE_KEY) || '[]');
+    collections.push({...cardData, id: Date.now()});
+    localStorage.setItem(COLLECTION_STORAGE_KEY, JSON.stringify(collections));
+}
+
+// 加载并恢复Moments卡片
+function restoreMomentCards() {
+    const moments = JSON.parse(localStorage.getItem(MOMENTS_STORAGE_KEY) || '[]');
+    moments.forEach(moment => {
+        const grid = document.querySelector('.moments-grid');
+        if (grid) {
+            const newCard = document.createElement('div');
+            newCard.className = 'moment-card';
+            newCard.setAttribute('data-deletable', 'true');
+            newCard.setAttribute('data-card-id', moment.id);
+            newCard.innerHTML = `
+                <div class="upload-placeholder" onclick="changeImageFromPlaceholder(this)" style="${moment.image ? 'display:none' : ''}">
+                    <div class="upload-icon">+</div>
+                    <div class="upload-text">Upload Image</div>
+                </div>
+                ${moment.image ? `<img src="${moment.image}" alt="Moment" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" onclick="openImageViewer(this)">` : ''}
+                <div class="moment-overlay">
+                    <h3 contenteditable="true" data-editable="moment_id_${moment.id}_title">${moment.title || 'New Moment'}</h3>
+                    <p contenteditable="true" data-editable="moment_id_${moment.id}_date">${moment.date || new Date().toISOString().split('T')[0]}</p>
+                </div>
+                <button class="delete-btn" onclick="deleteContent(this)">×</button>
+            `;
+            grid.appendChild(newCard);
+        }
+    });
+}
+
+// 加载并恢复Collection卡片
+function restoreCollectionCards() {
+    const collections = JSON.parse(localStorage.getItem(COLLECTION_STORAGE_KEY) || '[]');
+    collections.forEach(collection => {
+        const grid = document.querySelector('.collection-grid');
+        if (grid) {
+            const newCard = document.createElement('div');
+            newCard.className = 'collection-card';
+            newCard.setAttribute('data-deletable', 'true');
+            newCard.setAttribute('data-card-id', collection.id);
+            newCard.innerHTML = `
+                <div class="upload-placeholder" onclick="changeImageFromPlaceholder(this)" style="${collection.image ? 'display:none' : ''}">
+                    <div class="upload-icon">+</div>
+                    <div class="upload-text">Upload Image</div>
+                </div>
+                ${collection.image ? `<img src="${collection.image}" alt="Collection" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" onclick="openImageViewer(this)">` : ''}
+                <div class="collection-info">
+                    <h3 contenteditable="true" data-editable="collection_id_${collection.id}_title">${collection.title || 'New Item'}</h3>
+                    <p class="collection-type" contenteditable="true" data-editable="collection_id_${collection.id}_type">${collection.type || 'Type'}</p>
+                    <p class="collection-date" contenteditable="true" data-editable="collection_id_${collection.id}_date">${collection.date || new Date().toISOString().split('T')[0]}</p>
+                </div>
+                <button class="delete-btn" onclick="deleteContent(this)">×</button>
+            `;
+            grid.appendChild(newCard);
+        }
+    });
+}
+
+// 添加新的 Moment 卡片
+window.addMomentCard = function() {
+    const grid = document.querySelector('.moments-grid');
+    if (!grid) {
+        console.error('moments-grid not found');
+        return;
+    }
+    const cardId = Date.now();
+    const newCard = document.createElement('div');
+    newCard.className = 'moment-card';
+    newCard.setAttribute('data-deletable', 'true');
+    newCard.setAttribute('data-card-id', cardId);
+    newCard.innerHTML = `
+        <div class="upload-placeholder" onclick="changeImageFromPlaceholder(this)">
+            <div class="upload-icon">+</div>
+            <div class="upload-text">Upload Image</div>
+        </div>
+        <div class="moment-overlay">
+            <h3 contenteditable="true" data-editable="moment_id_${cardId}_title">New Moment</h3>
+            <p contenteditable="true" data-editable="moment_id_${cardId}_date">${new Date().toISOString().split('T')[0]}</p>
+        </div>
+        <button class="delete-btn" onclick="deleteContent(this)">×</button>
+    `;
+    grid.appendChild(newCard);
+    
+    // 保存到localStorage
+    saveMomentCard({
+        id: cardId,
+        title: 'New Moment',
+        date: new Date().toISOString().split('T')[0],
+        image: ''
+    });
+    
+    updateImagesArray();
+    console.log('✅ New moment card added and saved');
+};
+
+// 添加新的 Collection 卡片
+window.addCollectionCard = function() {
+    const grid = document.querySelector('.collection-grid');
+    if (!grid) {
+        console.error('collection-grid not found');
+        return;
+    }
+    const cardId = Date.now();
+    const newCard = document.createElement('div');
+    newCard.className = 'collection-card';
+    newCard.setAttribute('data-deletable', 'true');
+    newCard.setAttribute('data-card-id', cardId);
+    newCard.innerHTML = `
+        <div class="upload-placeholder" onclick="changeImageFromPlaceholder(this)">
+            <div class="upload-icon">+</div>
+            <div class="upload-text">Upload Image</div>
+        </div>
+        <div class="collection-info">
+            <h3 contenteditable="true" data-editable="collection_id_${cardId}_title">New Item</h3>
+            <p class="collection-type" contenteditable="true" data-editable="collection_id_${cardId}_type">Type</p>
+            <p class="collection-date" contenteditable="true" data-editable="collection_id_${cardId}_date">${new Date().toISOString().split('T')[0]}</p>
+        </div>
+        <button class="delete-btn" onclick="deleteContent(this)">×</button>
+    `;
+    grid.appendChild(newCard);
+    
+    // 保存到localStorage
+    saveCollectionCard({
+        id: cardId,
+        title: 'New Item',
+        type: 'Type',
+        date: new Date().toISOString().split('T')[0],
+        image: ''
+    });
+    
+    updateImagesArray();
+    console.log('✅ New collection card added and saved');
+};
+
+// 删除内容的通用函数
+window.deleteContent = function(element) {
+    if (confirm('Are you sure you want to delete this item?')) {
+        const parent = element.closest('[data-deletable]') || element.parentElement;
+        const cardId = parent.getAttribute('data-card-id');
+        const sectionId = parent.closest('section').id;
+        
+        // 从localStorage中删除
+        if (sectionId === 'moments' && cardId) {
+            let moments = JSON.parse(localStorage.getItem(MOMENTS_STORAGE_KEY) || '[]');
+            moments = moments.filter(m => m.id != cardId);
+            localStorage.setItem(MOMENTS_STORAGE_KEY, JSON.stringify(moments));
+        } else if (sectionId === 'collection' && cardId) {
+            let collections = JSON.parse(localStorage.getItem(COLLECTION_STORAGE_KEY) || '[]');
+            collections = collections.filter(c => c.id != cardId);
+            localStorage.setItem(COLLECTION_STORAGE_KEY, JSON.stringify(collections));
+        }
+        
+        parent.remove();
+        updateImagesArray();
+        console.log('✅ Item deleted and removed from storage');
+    }
+};
+
+// 更新图片数组
+function updateImagesArray() {
+    allImages = Array.from(document.querySelectorAll('.moment-card img, .collection-card img, .about-image img'));
+}
+
+// 打开图片查看器
+window.openImageViewer = function(imgElement) {
+    const modal = document.getElementById('image-viewer-modal');
+    const viewerImg = document.getElementById('viewer-image');
+    const caption = document.querySelector('.image-viewer-caption');
+    
+    updateImagesArray();
+    currentImageIndex = allImages.indexOf(imgElement);
+    
+    viewerImg.src = imgElement.src;
+    caption.textContent = imgElement.alt || 'Image Preview';
+    
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // 添加淡入动画
+    setTimeout(() => {
+        modal.classList.add('image-viewer-visible');
+        viewerImg.classList.add('image-viewer-zoom-in');
+    }, 10);
+};
+
+// 关闭图片查看器
+window.closeImageViewer = function() {
+    const modal = document.getElementById('image-viewer-modal');
+    const viewerImg = document.getElementById('viewer-image');
+    
+    modal.classList.remove('image-viewer-visible');
+    viewerImg.classList.remove('image-viewer-zoom-in');
+    
+    setTimeout(() => {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+    }, 300);
+};
+
+// 导航图片
+window.navigateImage = function(direction) {
+    updateImagesArray();
+    currentImageIndex += direction;
+    
+    if (currentImageIndex < 0) {
+        currentImageIndex = allImages.length - 1;
+    } else if (currentImageIndex >= allImages.length) {
+        currentImageIndex = 0;
+    }
+    
+    const viewerImg = document.getElementById('viewer-image');
+    const caption = document.querySelector('.image-viewer-caption');
+    
+    viewerImg.classList.remove('image-viewer-zoom-in');
+    
+    setTimeout(() => {
+        viewerImg.src = allImages[currentImageIndex].src;
+        caption.textContent = allImages[currentImageIndex].alt || 'Image Preview';
+        viewerImg.classList.add('image-viewer-zoom-in');
+    }, 150);
+};
+
+// DOM 加载完成后初始化
+document.addEventListener('DOMContentLoaded', function() {
+    // 为所有带有 data-editable 属性且没有 contenteditable="false" 的元素添加可编辑功能
+    document.querySelectorAll('[data-editable]:not([contenteditable="false"])').forEach(element => {
+        element.contentEditable = true;
+        element.classList.add('editable-content');
+        
+        element.addEventListener('blur', function() {
+            const key = this.getAttribute('data-editable');
+            const content = this.textContent;
+            localStorage.setItem('editable_' + key, content);
+            console.log('Saved:', key, content);
+        });
+        
+        const savedContent = localStorage.getItem('editable_' + this.getAttribute('data-editable'));
+        if (savedContent) {
+            this.textContent = savedContent;
+        }
+    });
+    
+    // 为所有卡片图片添加点击放大功能（按住Ctrl/Cmd点击替换，直接点击放大）
+    document.querySelectorAll('.moment-card img, .collection-card img').forEach(img => {
+        img.addEventListener('click', function(e) {
+            if (e.ctrlKey || e.metaKey) {
+                changeImage(this);
+            } else {
+                openImageViewer(this);
+            }
+        });
+        img.style.cursor = 'zoom-in';
+        img.title = 'Click to view | Ctrl+Click to replace';
+    });
+    
+    // 更新图片数组
+    updateImagesArray();
+    
+    // 恢复保存的 Moments 和 Collection 卡片
+    restoreMomentCards();
+    restoreCollectionCards();
+    
+    // 重新初始化已恢复卡片的编辑功能
+    setTimeout(() => {
+        document.querySelectorAll('[data-editable]:not([contenteditable="false"])').forEach(element => {
+            element.contentEditable = true;
+            element.classList.add('editable-content');
+            
+            element.addEventListener('blur', function() {
+                const key = this.getAttribute('data-editable');
+                const content = this.textContent;
+                localStorage.setItem('editable_' + key, content);
+                
+                // 如果是卡片中的内容，也更新对应的存储
+                const cardId = element.closest('[data-card-id]')?.getAttribute('data-card-id');
+                if (cardId) {
+                    if (key.includes('moment_id_')) {
+                        let moments = JSON.parse(localStorage.getItem(MOMENTS_STORAGE_KEY) || '[]');
+                        const moment = moments.find(m => m.id == cardId);
+                        if (moment) {
+                            if (key.includes('_title')) moment.title = content;
+                            if (key.includes('_date')) moment.date = content;
+                            localStorage.setItem(MOMENTS_STORAGE_KEY, JSON.stringify(moments));
+                        }
+                    } else if (key.includes('collection_id_')) {
+                        let collections = JSON.parse(localStorage.getItem(COLLECTION_STORAGE_KEY) || '[]');
+                        const collection = collections.find(c => c.id == cardId);
+                        if (collection) {
+                            if (key.includes('_title')) collection.title = content;
+                            if (key.includes('_type')) collection.type = content;
+                            if (key.includes('_date')) collection.date = content;
+                            localStorage.setItem(COLLECTION_STORAGE_KEY, JSON.stringify(collections));
+                        }
+                    }
+                }
+                console.log('Saved:', key, content);
+            });
+            
+            const savedContent = localStorage.getItem('editable_' + this.getAttribute('data-editable'));
+            if (savedContent) {
+                this.textContent = savedContent;
+            }
+        });
+        
+        // 重新添加图片点击事件
+        document.querySelectorAll('.moment-card img, .collection-card img').forEach(img => {
+            img.addEventListener('click', function(e) {
+                if (e.ctrlKey || e.metaKey) {
+                    changeImage(this);
+                } else {
+                    openImageViewer(this);
+                }
+            });
+            img.style.cursor = 'zoom-in';
+            img.title = 'Click to view | Ctrl+Click to replace';
+        });
+    }, 100);
+    
+    // ESC 键关闭查看器
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            const modal = document.getElementById('image-viewer-modal');
+            if (modal.style.display === 'flex') {
+                closeImageViewer();
+            }
+        }
+        // 左右箭头导航
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+            const modal = document.getElementById('image-viewer-modal');
+            if (modal.style.display === 'flex') {
+                e.preventDefault();
+                navigateImage(e.key === 'ArrowLeft' ? -1 : 1);
+            }
+        }
+    });
+    
+    console.log('✅ 可编辑内容功能已加载');
+});
+</script>
+</body>
+</html>
