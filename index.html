@@ -85,6 +85,9 @@
                     <img src="./images/juun18.jpg" alt="Kim Jueun">
                 </div>
             </div>
+            <!-- 英雄区装饰元素 -->
+            <img src="./images/juun.png" class="decoration dec1" alt="JUUN">
+            <img src="./images/juun.png" class="decoration dec2" alt="JUUN">
         </div>
     </section>
 
@@ -320,12 +323,22 @@
                 </p>
             </div>
             
+            <!-- 搜索框 -->
+            <div class="memory-search-container">
+                <input type="text" id="memory-search" placeholder="Search memories..." class="memory-search-input">
+                <button id="memory-search-clear" class="memory-search-clear">✕</button>
+            </div>
+            
+            
+            
+            
+            
             <div class="add-memory">
                 <h3 data-en="Add New Memory" data-ko="새 추억 추가">Add New Memory</h3>
                 <form id="memory-form">
                     <div class="form-group">
                         <label for="memory-date" data-en="Date" data-ko="날짜">Date</label>
-                        <input type="date" id="memory-date" required>
+                        <input type="date" id="memory-date" required lang="en" class="date-input">
                     </div>
                     
                     <div class="form-group">
@@ -364,6 +377,48 @@
             </div>
     </section>
 
+    <!-- 编辑回忆模态框 -->
+    <div id="edit-memory-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">✏️ Edit Memory</span>
+                <button class="modal-close" id="edit-memory-modal-close">✕</button>
+            </div>
+            
+            <div class="modal-body">
+                <form id="edit-memory-form">
+                    <input type="hidden" id="edit-memory-id">
+                    
+                    <div class="form-group">
+                        <label for="edit-memory-date">Date</label>
+                        <input type="date" id="edit-memory-date" required lang="en" class="date-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-memory-title">Title</label>
+                        <input type="text" id="edit-memory-title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-memory-content">Content</label>
+                        <textarea id="edit-memory-content" rows="5" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Image (Optional)</label>
+                        <div id="edit-memory-image-upload" class="image-upload-area">
+                            <span>📷 Click to upload image</span>
+                        </div>
+                        <input type="file" id="edit-memory-file" accept="image/*" style="display: none;">
+                        <div id="edit-memory-preview" class="upload-preview" style="display: none;"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">💾 Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- 给JUUN的信 -->
     <section id="letters" class="letters">
         <div class="container">
@@ -399,15 +454,11 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Angel's JUUN Memories | Hearts2Hearts</p>
             </div>
+            <!-- 页脚装饰元素 -->
+            <img src="./images/juun.png" class="decoration dec5" alt="JUUN">
         </div>
     </footer>
 
-    <!-- 卡通装饰元素（直接用img标签，100%显示） -->
-    <img src="./images/juun.png" class="decoration dec1" alt="JUUN">
-    <img src="./images/juun.png" class="decoration dec2" alt="JUUN">
-    <img src="./images/juun.png" class="decoration dec3" alt="JUUN">
-    <img src="./images/juun.png" class="decoration dec4" alt="JUUN">
-    <img src="./images/juun.png" class="decoration dec5" alt="JUUN">
 </script>
 <!-- JavaScript -->
 <script>
@@ -418,7 +469,6 @@
     window.addEventListener('DOMContentLoaded', () => {
         // 测试：确认脚本在运行
         console.log('✅ DOMContentLoaded - Script is running!');
-        alert('✅ Script loaded successfully!');
         
         // ======================================
         // ✅ 纯JS自动排序回忆（无需修改任何HTML）
@@ -544,44 +594,45 @@
         // 初始化默认的Moments数据
         const defaultMoments = [
             { id: 1, imageSrc: './images/juun20.jpg', title: 'Debut Stage', subtitle: 'February 24, 2025' },
-            { id: 2, imageSrc: './images/juun4.jpg', title: 'First Win', subtitle: 'November 5, 2025' },
-            { id: 3, imageSrc: './images/juun5.jpg', title: 'She Replied!', subtitle: 'December 12, 2025' },
-            { id: 4, imageSrc: './images/juun6.jpg', title: 'First Concert', subtitle: 'December 25, 2025' },
+            { id: 2, imageSrc: './images/juun4.jpg', title: 'Rookie Awards', subtitle: 'November 28, 2025' },
+            { id: 3, imageSrc: './images/juun5.jpg', title: 'She Replied To Me!', subtitle: 'September 08, 2025' },
+            { id: 4, imageSrc: './images/juun6.jpg', title: 'First Fan Meeting', subtitle: 'February 21, 2026' },
             { id: 5, imageSrc: './images/juun7.jpg', title: 'Her Birthday', subtitle: 'December 3, 2025' },
-            { id: 6, imageSrc: './images/juun8.jpg', title: 'Funny Moment', subtitle: 'January 15, 2026' }
+            { id: 6, imageSrc: './images/juun8.jpg', title: 'Fansign with Me', subtitle: 'October 27, 2025' }
         ];
         
         // 初始化默认的Collections数据
         const defaultCollections = [
             { id: 1, imageSrc: './images/juun9.jpg', title: 'The Chase', type: 'Single Album', date: 'Purchased: Feb 25, 2025' },
-            { id: 2, imageSrc: './images/juun10.jpg', title: 'FOCUS', type: 'Mini Album', date: 'Purchased: Oct 20, 2025' },
-            { id: 3, imageSrc: './images/juun19.jpg', title: 'Official Lightstick', type: 'Merchandise', date: 'Purchased: Nov 1, 2025' },
-            { id: 4, imageSrc: './images/juun12.jpg', title: 'JUUN Photocard', type: 'Photocard', date: 'Pulled: Oct 22, 2025' }
+            { id: 2, imageSrc: './images/juun10.jpg', title: 'STYLE', type: 'Single Song', date: 'Purchased: Jun 18, 2025' },
+            { id: 3, imageSrc: './images/juun19.jpg', title: 'FOCUS', type: 'Mini Album', date: 'Purchased: Oct 20, 2025' },
+            { id: 4, imageSrc: './images/juun12.jpg', title: 'RUDE!', type: 'Single Song', date: 'Purchased: Jan 20, 2026' },
+            { id: 5, imageSrc: './images/juun21.jpg', title: 'LemonTang', type: 'Mini Album', date: 'Purchased: Jun 22, 2026' }
         ];
         
         // 初始化默认的Memories数据
         const defaultMemories = [
             { id: 1, date: '2026-06-09', title: '此时此刻我很想你哦小恩', content: '我们快点见面吧！', image: null },
             { id: 2, date: '2026-02-21', title: '属于她们和我们之间的第一场FM', content: '我们主恩突然就长大啦 🐱', image: null },
-            { id: 3, date: '2025-12-12', title: 'She Replied To Me!', content: 'I left a comment on WVS this morning telling her how much I love her dance. To my absolute shock, she replied! I screamed so loud my mom came running. This is the best day of my life.', image: null },
-            { id: 4, date: '2025-11-05', title: 'First Win!', content: 'I cried when they announced the winner. Seeing her tear up on stage made my heart ache. All her hard work finally paid off. I am so proud of her.', image: null },
-            { id: 5, date: '2025-02-24', title: '我们小恩出道啦', content: '希望她永远幸福,永远被爱,快乐地享受舞台,Angel focus on JUUN forever', image: null }
+            { id: 3, date: '2025-02-24', title: '我们小恩出道啦', content: '希望她永远幸福,永远被爱,快乐地享受舞台,Angel focus on JUUN forever', image: null }
         ];
         
         // 初始化或加载数据（只在首次访问时初始化默认数据）
+        const DATA_VERSION = '1.0.7'; // 每次修改默认数据后更新版本号
+        
         function initStorage() {
-            // 检查是否是首次访问
-            const hasInitialized = localStorage.getItem('hasInitialized');
+            // 检查数据版本
+            const currentVersion = localStorage.getItem('dataVersion');
             
-            if (!hasInitialized) {
-                // 首次访问：设置默认数据
+            if (!currentVersion || currentVersion !== DATA_VERSION) {
+                // 版本不匹配或首次访问：重新设置默认数据
                 localStorage.setItem('juunMoments', JSON.stringify(defaultMoments));
                 localStorage.setItem('juunCollections', JSON.stringify(defaultCollections));
                 localStorage.setItem('juunMemories', JSON.stringify(defaultMemories));
-                localStorage.setItem('hasInitialized', 'true');
-                console.log('首次访问，已初始化默认数据');
+                localStorage.setItem('dataVersion', DATA_VERSION);
+                console.log('数据版本更新，已初始化默认数据 (v' + DATA_VERSION + ')');
             } else {
-                // 非首次访问：确保数据存在
+                // 版本匹配：确保数据存在
                 if (!localStorage.getItem('juunMoments')) {
                     localStorage.setItem('juunMoments', JSON.stringify([]));
                 }
@@ -591,7 +642,7 @@
                 if (!localStorage.getItem('juunMemories')) {
                     localStorage.setItem('juunMemories', JSON.stringify([]));
                 }
-                console.log('非首次访问，使用已保存的数据');
+                console.log('数据版本匹配，使用已保存的数据 (v' + DATA_VERSION + ')');
             }
         }
         
@@ -735,11 +786,14 @@
         function addMemoryToTimeline(id, date, title, content, image = null) {
             const newMemory = document.createElement('div');
             newMemory.className = 'timeline-item fade-in';
-            newMemory.dataset.id = id;
+            newMemory.setAttribute('data-id', id);
             newMemory.innerHTML = `
                 <div class="timeline-date">${date}</div>
                 <div class="timeline-content">
-                    <button class="delete-memory-btn">×</button>
+                    <div class="memory-actions">
+                        <button class="edit-memory-btn" title="Edit">✏️</button>
+                        <button class="delete-memory-btn" title="Delete">×</button>
+                    </div>
                     <h3>${title}</h3>
                     ${image ? `<img src="${image}" alt="Memory" class="timeline-image">` : ''}
                     <p>${content}</p>
@@ -794,6 +848,303 @@
                 deleteMemory(deleteBtn);
             }
         });
+        
+        // ======================================
+        // 编辑回忆功能
+        // ======================================
+        const editMemoryModal = document.getElementById('edit-memory-modal');
+        const editMemoryForm = document.getElementById('edit-memory-form');
+        const editMemoryModalClose = document.getElementById('edit-memory-modal-close');
+        const editMemoryImageUpload = document.getElementById('edit-memory-image-upload');
+        const editMemoryFile = document.getElementById('edit-memory-file');
+        const editMemoryPreview = document.getElementById('edit-memory-preview');
+        
+        let editMemoryImage = null;
+        
+        // 打开编辑模态框
+        function openEditMemoryModal(memoryId) {
+            // 从localStorage加载回忆数据
+            window.savedMemories = JSON.parse(localStorage.getItem('juunMemories')) || [];
+            const memory = window.savedMemories.find(m => m.id === memoryId);
+            
+            if (!memory) {
+                alert('Memory not found!');
+                return;
+            }
+            
+            // 填充表单
+            document.getElementById('edit-memory-id').value = memoryId;
+            document.getElementById('edit-memory-date').value = memory.date;
+            document.getElementById('edit-memory-title').value = memory.title;
+            document.getElementById('edit-memory-content').value = memory.content;
+            
+            // 显示现有图片
+            if (memory.image) {
+                editMemoryImage = memory.image;
+                editMemoryPreview.innerHTML = `<img src="${memory.image}" alt="Preview">`;
+                editMemoryPreview.style.display = 'block';
+                editMemoryImageUpload.style.display = 'none';
+            } else {
+                editMemoryImage = null;
+                editMemoryPreview.style.display = 'none';
+                editMemoryImageUpload.style.display = 'block';
+            }
+            
+            // 打开模态框
+            editMemoryModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // 关闭编辑模态框
+        function closeEditMemoryModal() {
+            editMemoryModal.classList.remove('active');
+            document.body.style.overflow = '';
+            editMemoryImage = null;
+            editMemoryPreview.style.display = 'none';
+            editMemoryImageUpload.style.display = 'block';
+        }
+        
+        // 图片上传
+        editMemoryImageUpload.addEventListener('click', () => editMemoryFile.click());
+        
+        editMemoryFile.addEventListener('change', async (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                try {
+                    const compressedImage = await compressImage(file);
+                    editMemoryImage = compressedImage;
+                    editMemoryPreview.innerHTML = `<img src="${editMemoryImage}" alt="Preview">`;
+                    editMemoryPreview.style.display = 'block';
+                    editMemoryImageUpload.style.display = 'none';
+                } catch (error) {
+                    console.error('Image compression failed:', error);
+                }
+            }
+        });
+        
+        // 保存编辑
+        editMemoryForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const memoryId = parseInt(document.getElementById('edit-memory-id').value);
+            const date = document.getElementById('edit-memory-date').value;
+            const title = document.getElementById('edit-memory-title').value;
+            const content = document.getElementById('edit-memory-content').value;
+            
+            // 更新localStorage
+            window.savedMemories = JSON.parse(localStorage.getItem('juunMemories')) || [];
+            const index = window.savedMemories.findIndex(m => m.id === memoryId);
+            
+            if (index > -1) {
+                window.savedMemories[index].date = date;
+                window.savedMemories[index].title = title;
+                window.savedMemories[index].content = content;
+                if (editMemoryImage) {
+                    window.savedMemories[index].image = editMemoryImage;
+                }
+                
+                localStorage.setItem('juunMemories', JSON.stringify(window.savedMemories));
+                
+                // 更新DOM
+                const timelineItem = timeline.querySelector(`[data-id="${memoryId}"]`);
+                if (timelineItem) {
+                    timelineItem.querySelector('.timeline-date').textContent = date;
+                    timelineItem.querySelector('h3').textContent = title;
+                    timelineItem.querySelector('p').textContent = content;
+                    if (editMemoryImage) {
+                        const img = timelineItem.querySelector('.timeline-image');
+                        if (img) {
+                            img.src = editMemoryImage;
+                        } else {
+                            const newImg = document.createElement('img');
+                            newImg.src = editMemoryImage;
+                            newImg.alt = 'Memory';
+                            newImg.className = 'timeline-image';
+                            timelineItem.querySelector('.timeline-content').insertBefore(newImg, timelineItem.querySelector('p'));
+                        }
+                    }
+                }
+                
+                // 重新排序
+                sortMemoriesByDate();
+                
+                closeEditMemoryModal();
+                alert(currentLang === 'en' ? '💜 Memory updated!' : '💜 추억이 업데이트되었습니다!');
+            }
+        });
+        
+        // 关闭按钮
+        editMemoryModalClose.addEventListener('click', closeEditMemoryModal);
+        editMemoryModal.addEventListener('click', (e) => {
+            if (e.target === editMemoryModal) {
+                closeEditMemoryModal();
+            }
+        });
+        
+        // 使用事件委托绑定编辑按钮点击事件
+        timeline.addEventListener('click', (e) => {
+            const editBtn = e.target.closest('.edit-memory-btn');
+            if (editBtn) {
+                const timelineItem = editBtn.closest('.timeline-item');
+                const memoryId = parseInt(timelineItem.getAttribute('data-id'));
+                openEditMemoryModal(memoryId);
+            }
+        });
+        
+        // ======================================
+        // 搜索/筛选功能
+        // ======================================
+        const memorySearchInput = document.getElementById('memory-search');
+        const memorySearchClear = document.getElementById('memory-search-clear');
+        
+        // 搜索功能
+        function searchMemories(query) {
+            query = query.toLowerCase().trim();
+            
+            // 获取所有回忆卡片
+            const memoryItems = timeline.querySelectorAll('.timeline-item');
+            
+            memoryItems.forEach(item => {
+                const title = item.querySelector('h3').textContent.toLowerCase();
+                const content = item.querySelector('p').textContent.toLowerCase();
+                const date = item.querySelector('.timeline-date').textContent.toLowerCase();
+                
+                // 如果搜索词匹配标题、内容或日期，显示卡片
+                if (title.includes(query) || content.includes(query) || date.includes(query)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            
+            // 显示/隐藏清除按钮
+            memorySearchClear.style.display = query ? 'block' : 'none';
+        }
+        
+        // 实时搜索
+        memorySearchInput.addEventListener('input', (e) => {
+            searchMemories(e.target.value);
+        });
+        
+        // 清除搜索
+        memorySearchClear.addEventListener('click', () => {
+            memorySearchInput.value = '';
+            searchMemories('');
+            memorySearchClear.style.display = 'none';
+        });
+        
+        // ======================================
+        // 拖拽排序功能
+        // ======================================
+        let draggedItem = null;
+        
+        // 添加拖拽样式
+        const dragStyle = document.createElement('style');
+        dragStyle.textContent = `
+            .timeline-item.dragging {
+                opacity: 0.5;
+                transform: scale(1.05);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            }
+            
+            .timeline-item.drag-over {
+                border-top: 3px solid #8b5cf6;
+            }
+        `;
+        document.head.appendChild(dragStyle);
+        
+        // 为回忆卡片添加拖拽功能
+        function enableDragForMemory(item) {
+            item.setAttribute('draggable', 'true');
+            
+            item.addEventListener('dragstart', (e) => {
+                draggedItem = item;
+                item.classList.add('dragging');
+                e.dataTransfer.effectAllowed = 'move';
+            });
+            
+            item.addEventListener('dragend', () => {
+                item.classList.remove('dragging');
+                draggedItem = null;
+                
+                // 移除所有drag-over样式
+                timeline.querySelectorAll('.timeline-item').forEach(i => {
+                    i.classList.remove('drag-over');
+                });
+                
+                // 保存排序到localStorage
+                saveMemoryOrder();
+            });
+            
+            item.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                e.dataTransfer.dropEffect = 'move';
+                
+                if (draggedItem && draggedItem !== item) {
+                    item.classList.add('drag-over');
+                }
+            });
+            
+            item.addEventListener('dragleave', () => {
+                item.classList.remove('drag-over');
+            });
+            
+            item.addEventListener('drop', (e) => {
+                e.preventDefault();
+                item.classList.remove('drag-over');
+                
+                if (draggedItem && draggedItem !== item) {
+                    // 获取所有回忆卡片
+                    const allItems = Array.from(timeline.querySelectorAll('.timeline-item'));
+                    const draggedIndex = allItems.indexOf(draggedItem);
+                    const dropIndex = allItems.indexOf(item);
+                    
+                    // 重新排序
+                    if (draggedIndex < dropIndex) {
+                        timeline.insertBefore(draggedItem, item.nextSibling);
+                    } else {
+                        timeline.insertBefore(draggedItem, item);
+                    }
+                    
+                    // 保存排序
+                    saveMemoryOrder();
+                }
+            });
+        }
+        
+        // 保存排序到localStorage
+        function saveMemoryOrder() {
+            const allItems = timeline.querySelectorAll('.timeline-item');
+            const newOrder = [];
+            
+            allItems.forEach(item => {
+                const memoryId = parseInt(item.getAttribute('data-id'));
+                const memory = window.savedMemories.find(m => m.id === memoryId);
+                if (memory) {
+                    newOrder.push(memory);
+                }
+            });
+            
+            window.savedMemories = newOrder;
+            localStorage.setItem('juunMemories', JSON.stringify(window.savedMemories));
+        }
+        
+        // 为所有现有回忆卡片启用拖拽
+        timeline.querySelectorAll('.timeline-item').forEach(item => {
+            enableDragForMemory(item);
+        });
+        
+        // 监听新添加的回忆卡片
+        const originalAddMemoryToTimeline = addMemoryToTimeline;
+        addMemoryToTimeline = function(id, date, title, content, image = null) {
+            originalAddMemoryToTimeline(id, date, title, content, image);
+            const newItem = timeline.querySelector(`[data-id="${id}"]`);
+            if (newItem) {
+                enableDragForMemory(newItem);
+            }
+        };
+        
+        
         
         // ======================================
         // 12. 信件功能（写信、保存、显示、删除）
@@ -1986,32 +2337,44 @@
         // ✅ 纯增量回忆删除功能（零修改原有代码）
         // ======================================
         (function addMemoryDeleteFeature() {
-            // 1. 添加删除按钮的CSS样式
+            // 1. 添加删除按钮和编辑按钮的CSS样式
             const deleteStyle = document.createElement('style');
             deleteStyle.textContent = `
-                .delete-memory-btn {
+                .memory-actions {
                     position: absolute;
                     top: 12px;
                     right: 12px;
-                    width: 24px;
-                    height: 24px;
+                    display: flex;
+                    gap: 8px;
+                    opacity: 0;
+                    transition: all 0.3s ease;
+                    z-index: 10;
+                }
+                
+                .timeline-content:hover .memory-actions {
+                    opacity: 1;
+                }
+                
+                .edit-memory-btn,
+                .delete-memory-btn {
+                    width: 28px;
+                    height: 28px;
                     border-radius: 50%;
                     border: none;
                     background-color: #f3f4f6;
                     color: #6b7280;
                     font-size: 14px;
-                    font-weight: bold;
                     cursor: pointer;
-                    opacity: 0;
                     transition: all 0.3s ease;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    z-index: 10;
                 }
                 
-                .timeline-content:hover .delete-memory-btn {
-                    opacity: 1;
+                .edit-memory-btn:hover {
+                    background-color: #8b5cf6 !important;
+                    color: white !important;
+                    transform: scale(1.1);
                 }
                 
                 .delete-memory-btn:hover {
@@ -2019,81 +2382,103 @@
                     color: white !important;
                     transform: scale(1.1);
                 }
+                
+                /* 搜索框样式 */
+                .memory-search-container {
+                    position: relative;
+                    margin-bottom: 30px;
+                    max-width: 400px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                .memory-search-input {
+                    width: 100%;
+                    padding: 12px 40px 12px 15px;
+                    border: 2px solid #e5e7eb;
+                    border-radius: 25px;
+                    font-size: 14px;
+                    transition: all 0.3s ease;
+                    background-color: white;
+                }
+                
+                .memory-search-input:focus {
+                    outline: none;
+                    border-color: #8b5cf6;
+                    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+                }
+                
+                .memory-search-clear {
+                    position: absolute;
+                    right: 12px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    border: none;
+                    background-color: #e5e7eb;
+                    color: #6b7280;
+                    font-size: 12px;
+                    cursor: pointer;
+                    display: none;
+                    transition: all 0.3s ease;
+                }
+                
+                .memory-search-clear:hover {
+                    background-color: #8b5cf6;
+                    color: white;
+                }
             `;
             document.head.appendChild(deleteStyle);
-
-            // 2. 给单个回忆添加删除按钮
-            function addDeleteButtonToMemory(memoryItem) {
-                // 如果已经有删除按钮了，就不再添加
-                if (memoryItem.querySelector('.delete-memory-btn')) return;
-
-                const content = memoryItem.querySelector('.timeline-content');
-                if (!content) return;
-
-                const deleteBtn = document.createElement('button');
-                deleteBtn.className = 'delete-memory-btn';
-                deleteBtn.textContent = '✕';
-                deleteBtn.type = 'button';
-
-                // 删除按钮点击事件
-                deleteBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    
-                    // 获取当前语言
-                    const currentLang = document.documentElement.lang || 'en';
-                    
-                    // 确认删除
-                    if (confirm(currentLang === 'en' 
-                        ? 'Are you sure you want to delete this memory?' 
-                        : '정말 이 추억을 삭제하시겠습니까?')) {
-                        
-                        // 提取回忆的日期、标题和内容
-                        const date = memoryItem.querySelector('.timeline-date')?.textContent || '';
-                        const title = content.querySelector('h3')?.textContent || '';
-                        const contentText = content.querySelector('p')?.textContent || '';
-
-                        // 从本地存储中删除
-                        const savedMemories = JSON.parse(localStorage.getItem('juunMemories')) || [];
-                        const updatedMemories = savedMemories.filter(m => 
-                            !(m.date === date && m.title === title && m.content === contentText)
-                        );
-                        localStorage.setItem('juunMemories', JSON.stringify(updatedMemories));
-
-                        // 淡出动画后删除元素
-                        memoryItem.style.opacity = '0';
-                        memoryItem.style.transform = 'translateX(30px)';
-                        memoryItem.style.transition = 'all 0.3s ease';
-                        setTimeout(() => memoryItem.remove(), 300);
-                    }
+            
+            // 强制日期输入框显示英文格式
+            document.querySelectorAll('.english-date').forEach(input => {
+                input.setAttribute('lang', 'en-US');
+            });
+        })();
+        
+        // ======================================
+        // ✅ 日期输入框英文格式设置
+        // ======================================
+        (function setEnglishDateInput() {
+            // 添加日期输入框样式
+            const dateStyle = document.createElement('style');
+            dateStyle.textContent = `
+                .date-input {
+                    width: 100%;
+                    padding: 10px 12px;
+                    border: 2px solid #e5e7eb;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    transition: all 0.3s ease;
+                    box-sizing: border-box;
+                }
+                
+                .date-input:focus {
+                    outline: none;
+                    border-color: #8b5cf6;
+                    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+                }
+            `;
+            document.head.appendChild(dateStyle);
+            
+            // 设置所有日期输入框为英文格式
+            const setDateLang = () => {
+                document.querySelectorAll('input[type="date"]').forEach(input => {
+                    input.setAttribute('lang', 'en');
+                    input.setAttribute('style', 'direction: ltr;');
                 });
-
-                content.appendChild(deleteBtn);
-            }
-
-            // 3. 给所有已有的回忆添加删除按钮
-            document.querySelectorAll('.timeline-item').forEach(addDeleteButtonToMemory);
-
-            // 4. 监听时间线变化，自动给新添加的回忆添加删除按钮
-            const timeline = document.getElementById('timeline');
-            if (timeline) {
-                const observer = new MutationObserver((mutations) => {
-                    mutations.forEach((mutation) => {
-                        mutation.addedNodes.forEach((node) => {
-                            if (node.nodeType === 1 && node.classList.contains('timeline-item')) {
-                                // 延迟一点添加，确保元素完全渲染
-                                setTimeout(() => addDeleteButtonToMemory(node), 100);
-                            }
-                        });
-                    });
-                });
-
-                // 开始监听时间线的子节点变化
-                observer.observe(timeline, {
-                    childList: true,
-                    subtree: false
-                });
+            };
+            
+            // 页面加载完成后设置日期输入框
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', setDateLang);
+            } else {
+                setDateLang();
             }
         })();
+        
         // ======================================
         // ✅ 纯增量回忆拖拽排序功能（零修改原有代码）
         // ======================================

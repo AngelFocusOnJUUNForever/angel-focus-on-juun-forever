@@ -137,47 +137,38 @@ body {
     overflow-x: hidden;
 }
 
-/* 通用装饰样式 - 无红框，100%不透明 */
+/* 通用装饰样式 */
 .decoration {
     position: absolute;
-    z-index: -1; /* 确保在所有内容最底层 */
-    pointer-events: none; /* 不影响任何点击操作 */
+    pointer-events: none;
 }
 
-/* 5个不同位置和角度的装饰（左上角和右上角已放大） */
+/* 英雄区左边装饰 - 完全在左侧外面，不遮挡内容 */
 .dec1 {
-    top: 120px;
-    left: 20px;
-    width: 190px; /* 放大到190px */
+    top: 80px;
+    left: -120px;
+    width: 200px;
     transform: rotate(-15deg);
+    opacity: 0.15;
 }
 
+/* 英雄区右边装饰 - 完全在右侧外面，不遮挡内容 */
 .dec2 {
-    top: 180px;
-    right: 20px;
-    width: 210px; /* 放大到210px，最大的一个 */
-    transform: rotate(10deg);
+    top: 80px;
+    right: -120px;
+    width: 200px;
+    transform: rotate(15deg);
+    opacity: 0.15;
 }
 
-.dec3 {
-    top: 750px;
-    left: 30px;
-    width: 140px;
-    transform: rotate(-20deg);
-}
-
-.dec4 {
-    top: 1150px;
-    right: 30px;
-    width: 170px;
-    transform: rotate(18deg);
-}
-
+/* 页脚装饰 - 只露出黄色小狗 */
 .dec5 {
-    bottom: 200px;
-    right: 60px;
-    width: 150px;
-    transform: rotate(-8deg);
+    position: absolute;
+    bottom: -130px;
+    right: 50px;
+    width: 180px;
+    transform: rotate(-3deg);
+    opacity: 1;
 }
 
 /* 颜色变量 - 紫色主题 */
@@ -303,6 +294,8 @@ nav {
 .hero {
     padding: 150px 0 100px;
     background: linear-gradient(135deg, rgba(245, 243, 255, 0.95) 0%, rgba(237, 233, 254, 0.95) 100%);
+    position: relative; /* 让子元素可以绝对定位 */
+    overflow: hidden; /* 隐藏超出hero区的装饰 */
 }
 
 .hero-content {
@@ -747,18 +740,16 @@ section {
 
 .moment-overlay {
     position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(139, 92, 246, 0.9), transparent);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(139, 92, 246, 0.95) 0%, rgba(139, 92, 246, 0.6) 40%, transparent 100%);
+    opacity: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 20px;
-}
-
-.moment-card:hover .moment-overlay {
-    opacity: 1;
 }
 
 .moment-overlay h3 {
@@ -766,11 +757,13 @@ section {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .moment-overlay p {
     color: rgba(255, 255, 255, 0.9);
     font-size: 14px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* 我的收藏 */
@@ -1131,6 +1124,8 @@ footer {
     color: white;
     padding: 50px 0 30px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .footer-logo {
@@ -1801,33 +1796,4 @@ footer {
 .fade-in {
     animation: fadeIn 0.5s ease forwards;
 }
-/* 回忆删除按钮 */
-.delete-memory-btn {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: none;
-    background-color: #f3f4f6;
-    color: #6b7280;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    opacity: 0;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.timeline-content:hover .delete-memory-btn {
-    opacity: 1;
-}
-
-.delete-memory-btn:hover {
-    background-color: #ef4444 !important;
-    color: white !important;
-    transform: scale(1.1);
-}
+/* 回忆按钮 - 样式由JavaScript动态添加 */
