@@ -294,8 +294,81 @@ nav {
 .hero {
     padding: 150px 0 100px;
     background: linear-gradient(135deg, rgba(245, 243, 255, 0.95) 0%, rgba(237, 233, 254, 0.95) 100%);
-    position: relative; /* 让子元素可以绝对定位 */
-    overflow: hidden; /* 隐藏超出hero区的装饰 */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark模式下Hero区深色背景 */
+.dark-mode .hero {
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0f0f1a 100%);
+}
+
+/* Hero区装饰动画 */
+.hero-decoration {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.hero-heart {
+    animation: floatHeart 4s ease-in-out infinite;
+}
+
+.hero-star {
+    animation: floatStar 5s ease-in-out infinite;
+}
+
+.hero-wing {
+    animation: floatWing 6s ease-in-out infinite;
+}
+
+@keyframes floatHeart {
+    0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.3; }
+    50% { transform: translateY(-20px) rotate(5deg); opacity: 0.6; }
+}
+
+@keyframes floatStar {
+    0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.3; }
+    50% { transform: translateY(-25px) rotate(-10deg); opacity: 0.7; }
+}
+
+@keyframes floatWing {
+    0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.2; }
+    50% { transform: translateY(-15px) rotate(5deg); opacity: 0.4; }
+}
+
+/* Dark模式下Hero区装饰 */
+.dark-mode .hero-heart,
+.dark-mode .hero-star,
+.dark-mode .hero-wing {
+    opacity: 0.5;
+}
+
+.dark-mode .hero-heart {
+    animation: floatHeartDark 4s ease-in-out infinite;
+}
+
+.dark-mode .hero-star {
+    animation: floatStarDark 5s ease-in-out infinite;
+}
+
+.dark-mode .hero-wing {
+    animation: floatWingDark 6s ease-in-out infinite;
+}
+
+@keyframes floatHeartDark {
+    0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.4; }
+    50% { transform: translateY(-25px) rotate(8deg); opacity: 0.8; }
+}
+
+@keyframes floatStarDark {
+    0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.4; }
+    50% { transform: translateY(-30px) rotate(-12deg); opacity: 0.9; }
+}
+
+@keyframes floatWingDark {
+    0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.3; }
+    50% { transform: translateY(-20px) rotate(6deg); opacity: 0.6; }
 }
 
 .hero-content {
@@ -313,26 +386,32 @@ nav {
 .hero-text h1 {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: bold;
-    color: var(--dark);
+    color: #1a1a2e;
     margin-bottom: 10px;
     text-shadow: 0 4px 8px rgba(139, 92, 246, 0.3);
 }
 
 .text-primary {
-    color: var(--primary);
+    color: #6D28D9;
 }
 
 .hero-text .subtitle {
     font-size: 1.1rem;
-    color: var(--gray);
+    color: #2D1F33;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .hero-text p {
     font-size: 1.1rem;
-    color: var(--gray);
+    color: #2D1F33 !important;
     margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.hero-text p:not(.subtitle) {
+    color: #2D1F33 !important;
+    font-weight: 500;
 }
 
 .love-timer {
@@ -483,6 +562,90 @@ section {
 /* 关于JUUN */
 .about {
     background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark模式下About区样式 */
+.dark-mode .about {
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0f0f1a 100%);
+}
+
+.dark-mode .about-tabs .tab-btn {
+    background: rgba(139, 92, 246, 0.15);
+    color: #C4B5FD;
+}
+
+.dark-mode .about-tabs .tab-btn:hover {
+    background: rgba(139, 92, 246, 0.3);
+}
+
+.dark-mode .about-tabs .tab-btn.active {
+    background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+    color: white;
+}
+
+.dark-mode .about .section-title h2 {
+    color: #ffffff;
+}
+
+.dark-mode .about .section-title p {
+    color: #d0d0e0;
+}
+
+.dark-mode .about .profile-info span:first-child {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.dark-mode .about .profile-info span:last-child {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.dark-mode .about-info h3 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.dark-mode .love-content p {
+    color: #e0e0e8 !important;
+    font-weight: 400;
+}
+
+/* About区装饰动画 */
+.about-decoration {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.dark-mode .about-decoration {
+    opacity: 0.4;
+}
+
+.about-heart {
+    animation: floatHeart 4s ease-in-out infinite;
+}
+
+.about-star {
+    animation: floatStar 5s ease-in-out infinite;
+}
+
+.about-wing {
+    animation: floatWing 6s ease-in-out infinite;
+}
+
+.dark-mode .about-heart {
+    animation: floatHeartDark 4s ease-in-out infinite;
+}
+
+.dark-mode .about-star {
+    animation: floatStarDark 5s ease-in-out infinite;
+}
+
+.dark-mode .about-wing {
+    animation: floatWingDark 6s ease-in-out infinite;
 }
 
 .about-tabs {
@@ -662,6 +825,39 @@ section {
 /* 我的瞬间 */
 .moments {
     background-color: transparent;
+}
+
+/* Moments标签导航 */
+.moments-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.moments-tabs .tab-btn {
+    padding: 10px 24px;
+    border: 2px solid #8B5CF6;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #6D28D9;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.moments-tabs .tab-btn:hover {
+    background-color: #F3E8FF;
+    border-color: #7C3AED;
+}
+
+.moments-tabs .tab-btn.active {
+    background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+    color: white;
+    border-color: #6D28D9;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
 }
 
 .moments-grid {
@@ -1042,6 +1238,87 @@ section {
 
 .dark-mode .timeline-content p {
     color: #d0d0e0;
+}
+
+/* Dark模式下hero区字体对比度修复 */
+.dark-mode .hero-text h1 {
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(139, 92, 246, 0.5);
+    font-weight: 800;
+}
+
+.dark-mode .hero-text .text-primary {
+    color: #DDD6FE;
+}
+
+.dark-mode .hero-text .subtitle {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.dark-mode .hero-text p {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.dark-mode .hero-text p:not(.subtitle) {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.dark-mode .love-timer {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.3) 0%, rgba(167, 139, 250, 0.3) 100%);
+    border-color: rgba(167, 139, 250, 0.5);
+}
+
+.dark-mode .love-timer span {
+    color: #ffffff;
+}
+
+.dark-mode .love-timer .timer-date,
+.dark-mode .love-timer .timer-count {
+    color: #E9D5FF;
+    font-weight: 600;
+}
+
+/* Dark模式下collection区字体对比度修复 */
+.dark-mode .collection {
+    background-color: #0f0f1a;
+}
+
+.dark-mode .collection-card {
+    background-color: #1a1a2e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .collection-info h3 {
+    color: #ffffff;
+}
+
+.dark-mode .collection-type {
+    color: #c0c0d0;
+}
+
+.dark-mode .collection-date {
+    color: #b0b0c0;
+}
+
+/* Dark模式下Moments标签按钮样式 */
+.dark-mode .moments-tabs .tab-btn {
+    background-color: rgba(30, 30, 50, 0.8);
+    border-color: #9B6CD4;
+    color: #D4C2E8;
+}
+
+.dark-mode .moments-tabs .tab-btn:hover {
+    background-color: rgba(139, 92, 246, 0.2);
+    border-color: #A78BFA;
+}
+
+.dark-mode .moments-tabs .tab-btn.active {
+    background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+    color: white;
+    border-color: #9B6CD4;
 }
 
 /* Memory区图片上传预览样式 */
